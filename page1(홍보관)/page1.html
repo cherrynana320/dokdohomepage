@@ -1,0 +1,1702 @@
+<!Doctype html>
+<html>
+<head>
+   <meta charset="UTF-8">
+  <link rel="stylesheet" href="layout2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+  <style type="text/css">
+  *{
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;}
+
+  *{
+    list-style: none;
+    text-decoration: none;
+  }
+
+  @media (max-width: 1580px){
+    .nav .menu-1 .link-1{
+      visibility: hidden;
+    }
+
+  }
+
+  caption{
+    visibility: hidden;
+  }
+
+  body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+
+  .wrap {
+    min-height: 100%;
+    position: relative;
+    }
+
+
+  /*레이아웃*/
+  *{margin: 0; padding: 0;}
+
+  #wrap{
+    width: 100%;
+    height: 100% auto;
+    margin: 0 auto;
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  #sidebar{
+    background: #fff;
+    width: 70px;
+    top: 0px;
+    z-index: 80;
+    height: 700px;
+    float: left;
+  }
+
+  #mainlogo{
+    background: none;
+    width: 10%;
+    height: 120px;
+    float: left;
+    margin-left: 70px;
+  }
+
+  #header1{
+    background: none;
+    width: 1200;
+    height: 120px;
+    float: left;
+    z-index: 1;
+  }
+
+  #header2{
+    background: #3949ab;
+    width: calc(100% - 70px);
+    height: 295px;
+    float: right;
+  }
+
+  #header22{
+    background: white;
+    border-bottom: 1px solid #ebebeb;
+    width: calc(100% - 13%);
+    height: 60px;
+    float: left;
+  }
+
+  #content{
+    background: #fff;
+    max-width: 1400px;
+    min-height: 500px;
+    padding: 0 10px 0 280px;
+    margin: 40px auto 70px;
+    height: auto;
+    float: left;
+    }
+
+  #footer{
+    background: #383a4a;
+    width: 100%;
+    float: bottom;
+    clear: both;
+  }
+
+
+  html{
+    height: 100%;
+  }
+  ul, li, ol{
+      list-style: none;
+      margin: 0;
+  }
+
+  #a{
+    display: flex;
+  }
+
+
+
+
+/*메인로고*/
+
+.mainlogo_image > a > img{
+  margin-top: 45px;
+}
+
+
+
+/*헤더부분의 3단메뉴*/
+
+ ul, li {margin:0; padding:0; list-style: none;   }
+
+ a {text-decoration: none;  display:block; font-size:17px;  }
+
+
+.header1_menu{
+  display: flex;
+  }
+
+.nav {
+    display: flex;
+    position: absolute; 
+    top:55px; 
+    right:735px; 
+    width: 700px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bolder;
+    z-index: 1000000;
+  }
+
+  .nav .menu-1 {
+      width: 100%
+  }
+
+  /* 2단 메뉴 */
+  .nav .menu-1 .link-1 {
+    /* 꾸미기*/
+    background-color: white;
+    color: black;
+    padding: 3px 15px;
+    font-size: 16px;
+  }
+
+  .nav .menu-1 .list-1 {
+      font-size:15px; 
+      font-weight:300;
+     display: none;
+
+    /* 꾸미기 */
+    /*padding-right: 1px;*/
+    background-color: #41478f;
+  }
+
+    .nav .menu-1 .link-1:hover {
+    color:#41478f;
+    text-decoration: none;
+    background:url(./images_3/arrow2.png) no-repeat 50% 0 ;
+    background-position: right center;
+  }
+
+
+  .nav .menu-1 .link-1:hover+.list-1,
+  .nav .menu-1 .list-1:hover{
+    display: block;
+  }
+
+  .nav .menu-1 .list-1 .link-2 {
+    /* 꾸미기 */
+    text-align: left;
+    background-color: #383a4a;
+    color: #9c9da5;
+    height: auto;
+    box-shadow:3px 15px 15px rgba(0,0,0,0.15);
+    padding-top: 20px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+  }
+
+  /* 3단 메뉴 */
+  .nav .menu-2 {
+    position: relative;
+    width: 150%;
+  }
+  .nav .menu-2 .list-2 {
+    display: none;  
+  }
+  .nav .menu-2 .link-2:hover {
+    /* 꾸미기 */
+    text-decoration: underline;
+    background-color:#383a4a;
+    color:#fee7a8;
+  }
+  .nav .menu-2 .link-2:hover+.list-2,
+  .nav .menu-2 .list-2:hover{
+    display: block;
+  }
+  .nav .menu-2 .list-2{
+   position: absolute;
+    top:0;
+    left:100%;
+    width:120px;
+    right:-300px; min-width:230px; box-sizing:border-box; padding:15px 30px; background:#fff; border:1px solid #41478f;
+  }
+  .nav .menu-2 .list-2 .link-3 {
+     text-align: center;
+    vertical-align: middle;
+    font-size:15px; 
+    /*font-weight:bold;*/
+    display:block; 
+    position:relative;
+    padding:15px 15px 15px 15px; 
+    text-align:left; 
+    color:#c2c2c2; 
+    width: 98%;
+    letter-spacing:-1px; 
+    word-break:keep-all; 
+    transition:background 0.3s ease 0s;
+    ;
+    /* 꾸미기 */
+    background-color: white;
+    color: black;
+  }
+
+
+  .nav .menu-2 .list-2 .link-3:hover {
+    /* 꾸미기 */
+    text-decoration: underline;
+    background-color:white;
+    color:#41478f;
+  }
+
+
+
+
+
+
+/*로그인/회원가입*/
+#header1 .area_util{position:absolute; top:52px; right:90px; z-index:90; color: white}
+
+#header1 .area_util > ul,
+#header1 .area_util .area_lang{display:inline-block; right: 20px;}
+
+#header1 .area_util > ul > li{display:inline-block; margin-right: 35px; font-size: 14px;}
+
+#header1 .area_util > ul > li > a{display:inline-block; position:relative; margin:0 5px; color:#666; font-weight:300; transition:all 0.3s ease 0.4s;}
+
+#header1 .area_util a[data-util]{padding-left:15px;}
+
+#header1 .area_util a[data-util]:before{content:''; display:block; position:absolute; top:-18px; right:-7px; width:26px; height:26px; background-image:url(http://www.koreadokdo.or.kr/images/common/sp_com.png); background-repeat:no-repeat; background-position-y:-67px; transition:background-position-y 0s ease 0.5s;}
+
+#header1 .area_util a[data-util="login"]:before{
+  background-position-x:-196px;}
+
+#header1 .area_util a[data-util="join"]:before{
+  background-position-x:-222px;}
+
+#header1 .area_util a[data-util="logout"]:before{background-position-x:-248px;}
+
+#header1 .area_util a[data-util="mypage"]:before{background-position-x:-274px;}
+
+#header1 .area_util .area_lang{position:relative; margin-left:15px;}
+
+
+#header1 .area_util .area_lang ul{display:none; position:absolute; top:33px; left:0px; width:125px; padding:10px 0px; background:#fff; box-shadow:0px 15px 15px rgba(0,0,0,0.15);}
+
+#header1 .area_util .area_lang ul li{padding:5px 10px;}
+
+#header1 .area_util .area_lang ul li > a{display:block; font-size:14px; transition:all 0.3s ease 0s;}
+
+#header1 .area_util .area_lang ul li > a:hover,
+#header1 .area_util .area_lang ul li > a:focus{background:#27272f; color:#fff;}
+
+#header1 .area_util.mob > ul > li > a{color:#fff; transition-delay:0s;}
+
+#header1 .area_util.mob a[data-util]:before{background-position-y:-41px; transition-delay:0s;}
+
+#header1 .area_util.mob .area_lang ul{top:32px;}
+
+
+
+/*사이드바*/
+
+.area_sns{
+    position:absolute; 
+    top:0; 
+    left:0px; 
+    z-index:80; 
+    width:70px; 
+    background:#fff;
+    float: left;
+  }
+  .area_sns ul{position:relative; top:50%; transform:translateY(100%); margin-top:130px;
+  }
+  .area_sns ul li{margin-top:30px;}
+  .area_sns ul li > a{display:block; position:relative; width:23px; height:23px; margin:0 auto; text-indent:100%; overflow:hidden; white-space:nowrap; transition:all 0.3s ease 0s;}
+  .area_sns ul li > a:before{content:''; display:block; position:absolute; top:0px; left:0px; width:100%; height:100%; background-image:url(http://www.koreadokdo.or.kr/images/common/sp_com.png); background-repeat:no-repeat; background-position-y:0;}
+  .area_sns ul li > a[data-sns="face"]:before{background-position-x:0;}
+  .area_sns ul li > a[data-sns="insta"]:before{background-position-x:-23px;}
+  .area_sns ul li > a[data-sns="blog"]:before{background-position-x:-46px;}
+  .area_sns ul li > a[data-sns="tube"]:before{background-position-x:-69px;}
+  .area_sns ul li > a:hover,
+  .area_sns ul li > a:focus{opacity:0.6;}
+
+  .area_sns .scroll{
+    left: 50%;
+    bottom: 0px;
+    margin-left: -23px;
+  }
+
+  .area_sns .scroll span{
+    display: block;
+    margin-top: 390px;
+    margin-bottom: 40px;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    transform: rotate(-90deg);
+  }
+
+  .area_sns .scroll i{
+    display: block;
+    overflow: hidden;
+    position: relative;
+    width: 1px;
+    height: 140px;
+    margin: 0 auto;
+    background: rgba(210,212,201,0.7);
+  }
+
+  .area_sns .scroll i:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50px;
+    background: #404040;
+    animation: scroll 6s cubic-bezier(0.48, 0.13, 0.09, 0.99) infinite;
+  }
+
+  @keyframes scroll{
+    0%{transform: translateY(-50px);}
+    100%{transform: translateY(500%);}
+  }
+
+
+
+/*헤더2*/
+
+ .intro_bg{
+  background-image : url("http://www.koreadokdo.or.kr/images/common/img_sub_visual03.jpg") ;
+  background-position: 85%;
+  width: 100%;
+  height: 355px;
+  margin: 0px;
+
+}
+
+.intro_text{
+  position: absolute;
+  margin-left: 150px;
+  margin-top: 75px;
+  padding:  15px 0px 30px 60px;
+  z-index: 1;
+}
+
+@keyframes showItem {
+  from {
+    transform: translateX(-20px);
+    opacity: 0;
+    color: aqua;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.stagger-item {
+  animation: showItem 0.5s;
+  animation-fill-mode: both;
+}
+
+.stagger-item:nth-child(1) {
+  animation-delay: 0.8s;
+   font-family: 'Montserrat', 'Noto Sans KR' , '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif;
+  font-size: 55px;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  color: #fff;
+
+}
+.stagger-item:nth-child(2) {
+  animation-delay: 1.6s;
+  font-family: 'Noto Serif KR', serif;
+  font-size: 30px;
+  font-weight: lighter;
+  letter-spacing: -1.5px;
+  color: #fff;
+}
+
+/*헤더22*/
+
+
+.icon{
+  width: 60px;
+  height: 60px;
+  background: #383838;
+  position: relative;
+}
+
+.image{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line{
+  display: flex;
+  width: 1500px;
+  margin-left: 250px;
+}
+
+.snb{
+  display: flex;
+  background: white;
+  z-index: 1000;
+  perspective: 500px;
+}
+
+.snb > ul > li{
+  border: 1px solid #e1e1e1;
+}
+
+.snb > ul ul{
+  display :  none;
+}
+
+.snb > ul ul li{
+  padding:0 0 11px;
+}
+
+
+.snb > ul > li > a{
+  position: relative;
+  height: 60px;
+  box-sizing: border-box;
+  width: 257px;
+  padding-left: 40px;
+  padding-right: 50px;
+  background: #fff;
+  text-align: left;
+  font-size: 17px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  display :  block;
+  line-height: 55px;
+}
+
+.snb > ul > li > ul{
+  background: white;
+}
+
+.snb > ul > li > ul > li > a{
+  position: relative;
+  box-sizing: border-box;
+  width: 250px;
+  padding-left: 20px;
+  padding-right: 55px;
+  background: #fff;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  display :  block;
+  line-height: 30px;
+}
+
+.snb > ul > li:hover > a + ul{
+display : block;
+}
+
+.snb > ul > li:hover > a > input{
+transform:  rotateZ(180deg);
+}
+
+.arrow{
+  width: 8px;
+  height: 8px;
+  margin-left: 105px;
+  margin-top: 10px;
+ }
+.arrow > input:hover{
+  transform:  rotateZ(180deg);
+}
+
+ 
+.snb > ul> >li> a:hover + input{
+  transform:  rotateZ(180deg);
+}
+
+
+
+/*내용 부분*/
+  /*-----content-------*/
+
+  @media(max-width: 1450px){
+  #content{
+    box-sizing: border-box;
+    padding: 0 15px 0 70px;
+  }
+}
+
+ 
+@media(max-width: 1450px){
+  #content > h3{
+    margin-top: 30px;
+  }
+}
+
+
+#content > h3{
+  font-size: 35px;
+  color: #141414;
+  margin: 70px auto 50px;
+  letter-spacing: -0.5px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#content > h3:before{
+  content: '';
+  display: block;
+  width: 82px;
+  height: 19px;
+  margin: 0 auto 5px;
+  background: url(http://www.koreadokdo.or.kr/images/content/img_tit01.png) no-repeat 0 0;
+}
+
+#content > .inr .describe{
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+  margin: -40px 0 70px 0;
+  font-size: 17px;
+  font-weight: 300;
+  color: #797979;
+  text-align: center;
+  word-break: keep-all;
+  letter-spacing: -0.5px;
+  line-height: 2em;
+}
+
+/* 사이트맵 */
+    .area_sitemap > li > .gnb{width:100%;}
+    .area_sitemap > .gnb > li{margin:20px 0; width:100%; height:100%; clear:both; margin-left:0 !important; padding-bottom:30px; border-bottom:1px solid #dcdfe7 !important; box-sizing:border-box;}
+    .area_sitemap > .gnb > li:last-child{border-bottom:0 !important;}
+    .area_sitemap > .gnb > li > a{float:left; display:inline-block; width:20%; min-height:50px; overflow:hidden; background:#293b62 !important; color:#fff !important; box-sizing:border-box;}
+    .area_sitemap > .gnb > li > ul{float:right; width:80%; box-sizing:border-box;}
+    .area_sitemap > .gnb > li > ul > li{width:calc(100% / 4 - 30px); padding-left:0px !important; background:none !important; display:inline-block; float:left; margin-left:30px; box-sizing:border-box;}
+    .area_sitemap > .gnb > li > ul > li:nth-child(4n+1){clear:left;}
+    .area_sitemap > .gnb > li > ul > li > a{display:inline-block; padding-left:0px !important; margin:5px 10px; font-size:19px; font-weight:500 !important; box-sizing:border-box; word-break:keep-all;}
+    .area_sitemap > .gnb > li > ul > li > a:hover,
+    .area_sitemap > .gnb > li > ul > li > a:focus{color:#26afb8 !important;}
+    .area_sitemap > .gnb > li > ul > li > a:before{display:none;}
+    .area_sitemap > .gnb > li > ul > li > ul > li {padding-left:15px !important;}
+    .area_sitemap > .gnb > li > ul > li > ul > li > a{position:relative; margin-top:5px; padding-left:0 !important; line-height:1.8em; box-sizing:border-box; word-break:keep-all; font-size:15px !important;}
+    .area_sitemap > .gnb > li > ul > li > ul > li > a:before{left:-10px; width:2px; height:3px; margin-top:12px; position:absolute; content:""; display:block; background:url(../images/content/bul_list.png) no-repeat 0 0;}
+    .area_sitemap > .gnb > li > ul > li > ul > li > a:hover,
+    .area_sitemap > .gnb > li > ul > li > ul > li > a:focus{color:#264e84 !important;}
+    .area_sitemap > .gnb > li > ul > li > ul > li > a span{display:inline-block; line-height:1.3em;}
+    .area_sitemap > .gnb > li > a:after{background:#264e84; background-image:linear-gradient(0deg, #264e84, #26afb8); background-image:-ms-linear-gradient(0deg, #264e84, #26afb8); background-image:-webkit-linear-gradient(0deg, #264e84, #26afb8); background-image:-moz-linear-gradient(0deg, #264e84, #26afb8); background-image:-o-linear-gradient(0deg, #264e84, #26afb8);}
+
+
+    .shadow{margin:10px auto 70px auto !important; box-shadow:10px 10px 40px rgba(0,0,0,0.2);}
+    .box_img02{
+    position:relative; border-top:1px solid #dbe0e3; border-bottom:1px solid #dbe0e3; padding:30px 5%; text-align:center; margin:0 auto;}
+    .box_img02 img{
+    margin:0 8px; display:inline-block; text-align:center; max-width:250px;}
+    .board_page{margin-bottom:5px;}
+    .board_page strong{display:inline-block; margin:0 3px 0 5px; font-size:16px; color:#42478f;}
+    .board_page span{color:#222; font-weight:500;}
+
+    /* 정렬 */
+    #content{text-align:center;}
+
+    /*박스*/
+    .area_box.box06{padding:30px 40px; border:1px solid #9eb6ca; box-sizing:border-box; text-align:center;}
+    .area_box.box06 em{display:block; color:#325aad; font-size:25px; font-weight:600; letter-spacing:-1px; line-height:1.3em;}
+    .area_box.box06 .square01{z-index:10; position:absolute; top:-1px; left:-1px; content:""; width:15px; height:15px; background:#35a0e4;}
+    .area_box.box06 .square02{z-index:10; position:absolute; top:-1px; left:14px; content:""; width:15px; height:15px; background:#125a9c;}
+
+    .shadow{margin:10px auto 70px auto !important; box-shadow:10px 10px 40px rgba(0,0,0,0.2);}
+    .box_img02{position:relative; border-top:1px solid #dbe0e3; border-bottom:1px solid #dbe0e3; padding:30px 5%; text-align:center; margin:0 auto;}
+    .box_img02 img{margin:0 8px; display:inline-block; text-align:center; max-width:250px;}
+
+    @media all and (max-width:600px){
+      #content .scrollTable{overflow:auto;}
+      #content .scrollTable .table{width:650px;}
+    }
+
+    /* table */
+    #content table{width:100%;}
+    #content table.table01{margin-top:15px; border-top:2px solid #31517d; width:100%;}
+    #content table.table01 th,
+    #content table.table01 td{padding:14px; border:1px solid #ccc; text-align:center; font-size:16px;}
+    #content table.table01 th{font-weight:500; color:#203168; letter-spacing:-1px; word-break:keep-all; line-height:1.6em; border-bottom-color:#31517d;}
+    #content table.table01 td{font-weight:400; letter-spacing:-0.5px; word-break:keep-all; color:#545454; line-height:1.6em;}
+    #content table.table01 td strong{color:#4b6db3 !important; font-weight:400;}
+    #content table.table01 tr th:first-child{border-left-width:0px;}
+    #content table.table01 tr th:last-child{border-right-width:0px;}
+    #content table.table01 tr td:first-child{border-left-width:0px;}
+    #content table.table01 tr td:last-child{border-right-width:0px;}
+    #content table.table01 .taL{text-align:left !important;}
+    #content table.table01 .taR{text-align:right !important;}
+    #content table.table01 td.bg_gray{background:#f8f8f8;}
+    #content table.table01 td.bg_blue{background:#f4fcff;}
+    #content table.table01 td.bg_red{background:#fff4f4;}
+    #content table.table01 img{width:100%; max-width:300px;}
+    #content table.table01 td ul ul{margin:0 0 5px;}
+
+    @media all and (max-width:540px){
+      #content table.table01 th,
+      #content table.table01 td{padding:10px;font-size:15px;}
+    }
+    /* 기본 스타일 */
+    #content > .inr{width:1200px; padding-bottom:10px;}
+    #content > .inr .describe{position:relative; display:block; width:100%; clear:both; margin:-40px 0 70px 0; font-size:17px; font-weight:300; color:#797979; text-align:center; word-break:keep-all; letter-spacing:-0.5px; line-height:2em;}
+    #content > .inr h4{position:relative; font-size:26px; margin:60px 0 20px 0; font-weight:500; color:#141414; text-align:left; letter-spacing:-0.5px;}
+    #content > .inr h4:before{position:absolute; top:-8px; left:0; content:""; width:11px; height:4px; background:#42a9e5;}
+    #content > .inr h4:after{position:absolute; top:-8px; left:11px; content:""; width:11px; height:4px; background:#0e51a4;}
+    #content > .inr h5,
+    #content > .inr .h5{position:relative; font-size:20px; margin:25px 0; padding-left:12px; font-weight:500; color:#4b6db3; text-align:left; font-weight:500; letter-spacing:-0.5px;}
+    #content > .inr h5:before,
+    #content > .inr .h5:before{position:absolute; top:10px; left:0px; content:""; width:3px; height:12px; background:#4b6db3; transform:rotate(40deg);}
+    #content > .inr p{position:relative; display:block; width:100%; clear:both; margin:20px 0; font-size:17px; font-weight:300; color:#54575a; word-break:keep-all; letter-spacing:-1px; line-height:2em;}
+    #content > .inr p span{font-weight:400; color:#4b6db3;}
+
+    /*지도 아이콘*/
+    .btn_map{display:inline-block; position:relative; margin-left:3px; width:30px; height:30px; border:1px solid #dcdfe8; vertical-align:middle; background:url(http://www.koreadokdo.or.kr/images/content/btn_map.png) no-repeat 50% 50%; box-sizing:border-box; font-size:0; text-indent:100%; transition:all 0.5s ease;}
+
+
+
+
+/*하단 부분*/
+
+ *{
+    margin: 0;
+    padding: 0;
+  }
+  html{
+    height: 100%;
+  }
+  ul, li, ol{
+      list-style: none;
+      margin: 0;
+  }
+  footer {
+    height: 202px;
+    display: block;
+    background: #383a4a;
+    color: #c0c0c4;
+    font-family: Montserrat, Noto Sans KR , 맑은 고딕, Malgun Gothic,돋움, Dotum, 굴림, Gulim, sans-serif;
+/*    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
+    margin-top: auto;
+  }
+  body{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 15px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .wrap {
+    min-height: 100%;
+    position: relative;
+    }
+
+  .container{
+    box-sizing: border-box;
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 0px;
+  }
+  /*홈페이지정보*/
+  .footer_extra{
+    padding: 0px 110px 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+/*  .footer_extra{
+    display: flex;
+    flex-wrap: wrap;
+
+  }*/
+  .footer_extra li {
+    padding: 0px 55px 0px 0px;
+/*    margin-right: 9px;*/
+  }
+  .footer_extra li>a{
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 300;
+    color: #c7c7c7;
+    transition: all 0.3s;
+    text-decoration: none;
+/*    padding-right: 15px;*/
+    text-align: left;
+  }
+  .footer_extra li:first-child > a{
+    color: #b5bbff;
+  }
+  .footer_extra li>a:hover{
+    color: #ffffff;
+  }
+  .footer_extra li:first-child > a:hover{
+    color: #7a85ff;
+  }
+  /*sns버튼*/
+  .footer_sns{
+    position: absolute;
+    right: 0px;
+  }
+  .footer_sns ul{
+    display: flex;
+    margin-top: 35px;
+  }
+  .footer_sns ul>li>a{
+    margin-left: 14px;
+    position: relative;
+  }
+/*  .footer_sns ul>li.facebook{background-position-x: 0;}
+  .footer_sns ul>li.instagram{background-position-x: -23px;}
+  .footer_sns ul>li.blog{background-position-x: -46px;}
+  .footer_sns ul>li.youtube{background-position-x: -69px;}*/
+  /*독도재단 정보*/
+  .footer_info{
+    display: inline-block;
+    margin-top: 50px;
+    color: #c7c7c7;
+  }
+
+  .footer_info span{
+    display: inline-block;
+    margin-right: 35px;
+    padding:  0;
+    color: #c7c7c7;
+  }
+
+  .footer_info a{
+    display: inline-block;
+    color: #c7c7c7;
+    font-weight: 200;
+  }
+
+  .footer_info p{
+    font-size: 14px;
+    margin-top: 8px;
+    color: #c7c7c7;
+  }
+  
+  /*top 버튼*/
+  .top_button{
+    display: block;
+    position: absolute;
+    top: -40px;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+/*    box-sizing: border-box;
+*/  }
+
+h3 {
+    display: block;
+      font-size: 1.17em;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+    }
+
+select{
+  width:80px; 
+  height: 35px;
+  font-size: 15px;
+  font-style: bolder;
+  border: 1px solid #ddd;
+}
+
+
+  </style>
+
+</head>
+
+<body>
+  <div id="container">
+
+    <!-- 사이드바 -->
+    <aside class="area_sns">
+         <ul>
+          <li><a href="https://www.facebook.com/dokdojd" target="_blank" title="새창" data-sns="face">Facebook</a></li>
+          <li><a href="https://www.instagram.com/k_dokdo" target="_blank" title="새창" data-sns="insta">instagram</a></li>
+          <li><a href="https://dokdojd.blog.me/" target="_blank" title="새창" data-sns="blog">blog</a></li>
+          <li><a href="https://www.youtube.com/user/dokdojd" target="_blank" title="새창" data-sns="tube">youtube</a></li>
+         </ul>
+
+         <span class="scroll">
+           <span>Scroll</span>
+           <i></i>
+         </span>
+    </aside>
+
+    <div id="mainlogo">
+      <div class="mainlogo_image">
+      <a href="./main/main.html" class="logo img-box cell"><img src="http://www.koreadokdo.or.kr/images/common/logo.svg" width="190px" height="36px" alt=""></a>
+      </div>
+    </div>
+
+
+
+
+    <div id="header1">
+
+      <!-- //gnb -->
+      
+      <div class="area_util">   
+        <ul>
+                  <li><a href="#" data-util="login";><a href='#' target='_blank'></a>로그인</a></li>
+
+                    <li><a href="/member/page.html?mid=member&amp;mode=agree" data-util="join"><a href='#'></a>회원가입</a></li>
+        </ul>
+
+        <div class="area_lang">
+          <select name="language" id="language">
+          <option value="1">한국어</option>
+          <option value="2">English</option>
+          <option value="3">日本語</option>
+          <option value="3">中文</option>
+          </select>
+        </div>
+      </div>
+
+
+
+      <div class="header1_menu">
+         <ul class="nav float-wrap">
+              <li class="menu-1">
+                <a class="link-1" href="#">주요사업
+              </a>
+              <ul class="list-1">
+                <li class="menu-2 float-wrap">
+                  <a class="link-2" href="#">플랫폼 <span class="triangle"style="color: #9c9da5; font-size: xx-small; text-decoration: none; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a>
+                  <ul class="list-2">
+                    <li><a class="link-3" href="#">사이버 전략센터 「K-독도」 운영</a></li>
+                    <li><a class="link-3" href="#">매거진독도로제작</a></li>
+                  </ul>
+                <li class="menu-2 float-wrap">
+                  <a class="link-2" href="#">홍보(국내) <span style="font-size: xx-small; color: #9c9da5;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                  <ul class="list-2">
+                  <li><a class="link-3" href="#">독도 바로알기</a></li>
+                  <li><a class="link-3" href="#">찾아가는 독도자료전</a></li>
+                  <li><a class="link-3" href="#">우리땅 독도밟기</a></li>
+                  <li><a class="link-3" href="#">대학 독도동아리 결성 및 활성화</a></li>
+                </ul>
+
+                <li class="menu-2 float-wrap"><a class="link-2" href="#">홍보(국외) <span style="font-size: xx-small;  color: #9c9da5;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                  <ul class="list-2">
+                    <li><a class="link-3" href="#">국내체류 외국인 독도탐방</a></li>
+                    <li><a class="link-3" href="#">세계인과 함께하는 글로벌 독도</a></li>
+                    <li><a class="link-3" href="#">세계 청년 독도평화회의</a></li>
+                  </ul>
+                </li>
+                <li class="menu-2 float-wrap"><a class="link-2" href="#">동해(독도)기반 <span style="color: #9c9da5; font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶</span><p style="color: #9c9da5;">콘텐츠 개발</p></a></a>
+                  <ul class="list-2">
+                    <li><a class="link-3" href="#">독도 라운드테이블 운영</a></li>
+                    <li><a class="link-3" href="#">동해 및 독도 교육홍보 자료 개발</a></li>
+                    <li><a class="link-3" href="#">한·일 독도 진실 추구 실천 포럼</a></li>
+                  </ul>
+                </li>
+                <li class="menu-2 float-wrap"><a class="link-2" href="#">독도문화행사 <span style="color: #9c9da5;font-size: xx-small; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                  <ul class="list-2">
+                    <li><a class="link-3" href="#">독도문화대축제</a></li>
+                    <li><a class="link-3" href="#">독도문예대전</a></li>
+                  </ul>
+                </li>
+              </ul>
+
+              <li class="menu-1">
+                <a class="link-1" href="#">자료실
+              </a>
+                <ul class="list-1">
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">독도사진 <span style="color: #9c9da5; font-size: xx-small; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">독도</a></li>
+                      <li><a class="link-3" href="#">식물</a></li>
+                      <li><a class="link-3" href="#">조류</a></li>
+                      <li><a class="link-3" href="#">생물</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">독도영상 <span style="color: #9c9da5;font-size: xx-small; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">홍보영상</a></li>
+                      <li><a class="link-3" href="#">언론영상</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap">
+                    <a class="link-2" href="#">연구자료</a>
+                    <a class="link-2" href="#">매거진</a>
+                    <a class="link-2" href="#">매거진신청</a>
+                    <a class="link-2" href="#">홍보관</a>
+                    <a class="link-2" href="#">LIVE독도영상</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-1">
+                <a class="link-1" href="#">알림마당
+              </a>
+                <ul class="list-1">
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">재단알림 <span style="color: #9c9da5; font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">공지사항</a></li>
+                      <li><a class="link-3" href="#">카드뉴스</a></li>
+                      <li><a class="link-3" href="#">보도자료</a></li>
+                      <li><a class="link-3" href="#">언론 · 홍보</a></li>
+                      <li><a class="link-3" href="#">행사안내</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">정보공개 <span style="color: #9c9da5; font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">정보공개제도안내</a></li>
+                      <li><a class="link-3" href="#">업무처리절차</a></li>
+                      <li><a class="link-3" href="#">정보공개접수안내</a></li>
+                      <li><a class="link-3" href="#">불복구제절차</a></li>
+                      <li><a class="link-3" href="#">계약정보공개</a></li>
+                      <li><a class="link-3" href="#">사업실명제</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">고객광장 <span style="color: #9c9da5; font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">고객광장</a></li>
+                      <li><a class="link-3" href="#">독도교육신청</a></li>
+                      <li><a class="link-3" href="#">홍보버스신청</a></li>
+                      <li><a class="link-3" href="#">전시자료신청</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">윤리경영 <span style="color: #9c9da5; font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">윤리헌장</a></li>
+                      <li><a class="link-3" href="#">내부신고시스템</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-1">
+                <a class="link-1" href="#">기관소개
+              </a>
+                <ul class="list-1">
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">재단소개 <span style="color: #9c9da5; font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">인사말</a></li>
+                      <li><a class="link-3" href="#">기관연혁</a></li>
+                      <li><a class="link-3" href="#">비전/경영방침</a></li>
+                      <li><a class="link-3" href="#">조직도</a></li>
+                      <li><a class="link-3" href="#">찾아오시는길</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">열린경영 <span style="color: #9c9da5;font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">국민참여</a></li>
+                      <li><a class="link-3" href="#">고객헌장</a></li>
+                      <li><a class="link-3" href="#">인권경영</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap"><a class="link-2" href="#">통합공시 <span style="color: #9c9da5;font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶</span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">공개자료</a></li>
+                      <li><a class="link-3" href="#">업무추진비</a></li>
+                      <li><a class="link-3" href="#">경영공시</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-1">
+                <a class="link-1" href="#">독도현황
+                </a>
+                <ul class="list-1">
+                  <li class="menu-2 float-wrap">
+                    <a class="link-2" href="#">정부입장</a>
+                    <a class="link-2" href="#">일반현황 <span style="font-size: xx-small; color: #9c9da5;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">행정구역</a></li>
+                      <li><a class="link-3" href="#">지리적 위치</a></li>
+                      <li><a class="link-3" href="#">구성</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap">
+                    <a class="link-2" href="#">독도역사 <span style="font-size: xx-small; color: #9c9da5;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">독도의 진실</a></li>
+                      <li><a class="link-3" href="#">독도연대기</a></li>
+                      <li><a class="link-3" href="#">지명변천</a></li>
+                      <li><a class="link-3" href="#">문헌자료</a></li>
+                      <li><a class="link-3" href="#">역사 속 인물</a></li>
+                    </ul>
+                  </li>
+                  <li class="menu-2 float-wrap">
+                    <a class="link-2" href="#">관리현황 <span style="font-size: xx-small; color: #9c9da5;">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+                    <ul class="list-2">
+                      <li><a class="link-3" href="#">독도관련 부처별 관리현황</a></li>
+                      <li><a class="link-3" href="#">독도사람들</a></li>
+                      <li><a class="link-3" href="#">시설물</a></li>
+                      <li><a class="link-3" href="#">독도 관리를 위한 관계 법령</a></li>
+                      <li><a class="link-3" href="#">입도/교통편</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-1">
+                <a class="link-1" href="#">K-독도
+                </a>
+               </li>
+              </li>
+            </ul>
+          </div>
+    </div>
+          
+
+
+    <div id="header2">
+      
+      <div class="intro_bg">
+        <div class="intro_text">
+          <div class="stagger-item">자료실</div>
+          <div class="stagger-item">독도, 우리가 지켜나가야 할 영원한 우리 땅!</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="header22">
+        <div class="all">
+          <div class="line">
+            <div class="icon">
+              <input type="image" src="./images_2/home.png" class="image" alt="오류">
+            </div>
+
+
+
+              <div class="snb">
+              <ul>
+                <li>
+                 <a href="#a">홍보관  <input type="image" src="./images_2/arrow.png" class="arrow" width=10px height=10px alt="오류">
+                </a>
+
+                <ul>
+                  <li><a href="#a">독도사진</a></li>
+                  <li><a href="#a">독도영상</a></li>
+                  <li><a href="#a">연구자료</a></li>
+                  <li><a href="#a">매거진</a></li>
+                  <li><a href="#a">매거진신청</a></li>
+                  <li><a href="#a">홍보관</a></li>
+                  <li><a href="#a">LIVE 독도영상</a></li>
+                </ul>
+
+                </li>
+              </ul>
+              </div>
+
+          </div>
+        </div>
+
+    </div>
+
+
+
+    <div id="content">
+        <h3 data-cont-title="h3">
+          홍보관
+        </h3>
+        <div class="inr tit_img">
+          <p class="describe">독도 관련 현황을 안내해드립니다.</p>
+
+      <div class="area_box box06">
+        <p>
+          독도 실시간 영상을 HD급으로 볼 수 있고 독도의 지리, 생태계 및 역사적 정보를 한눈에 볼 수 있는 설명 자료 등으로 구성되어 있으며,<br>
+          특히 KBS에서 송출하는 독도 실시간 영상은 독도 상공 해발 100M에 설치한 파노라마 카메라가 영상을 찍어 독도의 생생한 영상을 전하고 있어 큰 호응을 얻고 있다.
+        </p>
+      </div>
+
+      <br>
+
+      <div class="box_img02">
+        <img alt="영상관 사진" src="http://www.koreadokdo.or.kr/images/content/img_promote01.jpg" /> 
+        <img alt="영상관 사진" src="http://www.koreadokdo.or.kr/images/content/img_promote02.jpg" />
+      </div>
+      
+      <h4>경북도내 - 관공서 16개소, 교육기관 13개소, 금융기관 38개소, 기타 7개소</h4>
+
+     <div class="scrollTable">
+            <table class="table01">
+              <caption>독도 실시간 영상관 현황</caption>
+              <colgroup>
+                <col style="width: 5%;">
+                <col style="width: 10%;">
+                <col>
+                <col style="width: 10%;">
+                <col style="width: 5%;">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col">번호</th>
+                  <th scope="col">설치기관</th>
+                  <th scope="col">소재지</th>
+                  <th scope="col">설치장소</th>
+                  <th scope="col">설치일자</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td rowspan="4">1</td>
+                  <td rowspan="4">경북도청(4개)</td>
+                  <td>경북 안동시 풍천면 도청대로 455 <a class="btn_map" href="http://naver.me/5YYWawpQ" target="_blank">지도보기</a></td>
+                  <td>본청 홍보관</td>
+                  <td>&#39;16.6.7</td>
+                </tr>
+                <tr>
+                  <td>경북 포항시 북구 용흥로 90 <a class="btn_map" href="http://naver.me/FiHaR1xc" target="_blank">지도보기</a></td>
+                  <td>환동해지역본부</td>
+                  <td>&#39;17.1.16</td>
+                </tr>
+                <tr>
+                  <td>경상북도 영덕군 병곡면 고래불로 178 <a class="btn_map" href="http://naver.me/5pxkHH5v" target="_blank">지도보기</a></td>
+                  <td>수산자원연구소</td>
+                  <td>&#39;16.5</td>
+                </tr>
+                <tr>
+                  <td>경상북도 울진군 근남면 물영계곡로 3532 <a class="btn_map" href="http://naver.me/FeQRDSKs" target="_blank">지도보기</a></td>
+                  <td>민물고기연구센터</td>
+                  <td>&#39;17</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>경북도의회</td>
+                  <td>경상북도 안동시 풍천면 도청대로 455 <a class="btn_map" href="http://naver.me/5xhSphlM" target="_blank">지도보기</a></td>
+                  <td>본관</td>
+                  <td>&#39;16.6.7</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>경북지방경찰청</td>
+                  <td>경상북도 안동시 풍천면 검무로 77 <a class="btn_map" href="http://naver.me/IG21yiPe" target="_blank">지도보기</a></td>
+                  <td>본관</td>
+                  <td>&#39;16.6.7</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>경상북도교육청</td>
+                  <td>경상북도 안동시 풍천면 도청대로 511 <a class="btn_map" href="http://naver.me/xhkKhJPx" target="_blank">지도보기</a></td>
+                  <td>본관</td>
+                  <td>&#39;16.6.7</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>울릉군청</td>
+                  <td>경상북도 울릉군 울릉읍 도동2길 66 <a class="btn_map" href="http://naver.me/GZ7xuqmx" target="_blank">지도보기</a></td>
+                  <td>현관</td>
+                  <td>&#39;15.5.20</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>점촌초등학교</td>
+                  <td>경상북도 문경시 중앙로 63-16 <a class="btn_map" href="http://naver.me/5sh4T5kG" target="_blank">지도보기</a></td>
+                  <td>독도체험관</td>
+                  <td>&#39;15.5.20</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>포항여객선터미널</td>
+                  <td>경상북도 포항시 북구 해안로 44 <a class="btn_map" href="http://naver.me/x6lAz0rr" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.5.20</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>포항시청</td>
+                  <td>경상북도 포항시 남구 시청로 1 <a class="btn_map" href="http://naver.me/GN7vWkgu" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.5.20</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>포항새천년기념관</td>
+                  <td>경상북도 포항시 남구 호미곶면 대보리 <a class="btn_map" href="http://naver.me/GrIbaAEb" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.5.20</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>포항영신고등학교</td>
+                  <td>경상북도 포항시 북구 소티재로 107 <a class="btn_map" href="http://naver.me/5VzSQuet" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;11.2.21</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>포항예술고등학교</td>
+                  <td>경상북도 포항시 북구 흥해읍 연화길 56 <a class="btn_map" href="http://naver.me/5IuR94X8" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>흥해공업고등학교</td>
+                  <td>경상북도 포항시 북구 흥해읍 동해대로 1475번길 42 <a class="btn_map" href="http://naver.me/xLDkAvdY" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>구미전자고등학교</td>
+                  <td>경상북도 구미시 임수로 48 <a class="btn_map" href="http://naver.me/xPENmtTM" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <!--
+                <tr>
+                  <td>14</td>
+                  <td>금오여자고등학교</td>
+                  <td>포항시 북구 흥해읍 동해대로 1475번길 42 <a class="btn_map" href="http://naver.me/FAtYx14G" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                    -->
+                <tr>
+                  <td>14</td>
+                  <td>경구고등학교</td>
+                  <td>경상북도 구미시 봉곡로9길 25 <a class="btn_map" href="http://naver.me/GqtK4HDc" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>녹전면사무소</td>
+                  <td>경상북도 안동시 녹전면 녹전로 713 <a class="btn_map" href="http://naver.me/GE2FhAN6" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>임동초등학교</td>
+                  <td>경상북도 안동시 임동면 편항길42 <a class="btn_map" href="http://naver.me/GHipqEgl" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>길안초등학교</td>
+                  <td>경상북도 안동시 길안면 천지리 충효로 2230 <a class="btn_map" href="http://naver.me/GjMmXRGy" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>길안중학교</td>
+                  <td>경상북도 안동시 길안면 천지안길 71-3 <a class="btn_map" href="http://naver.me/FGgWxowS" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>길안면사무소</td>
+                  <td>경상북도 안동시 길안면 길안청송로3 <a class="btn_map" href="http://naver.me/GfUusa4y" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>안동교육지원청</td>
+                  <td>경상북도 안동시 경동로 554 <a class="btn_map" href="http://naver.me/GoVI7z7b" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>21</td>
+                  <td>안동시청</td>
+                  <td>경상북도 안동시 퇴계로 115 <a class="btn_map" href="http://naver.me/FPJB8Mmi" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>부항댐 물문화관</td>
+                  <td>경상북도 김천시 지례면 도곡리 1005번지 <a class="btn_map" href="http://naver.me/FKSAvpqW" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;16.6.30</td>
+                </tr>
+                <tr>
+                  <td>23</td>
+                  <td>영광여자고등학교</td>
+                  <td>경상북도 영주시 숫골길23번길 39 <a class="btn_map" href="http://naver.me/GISPJ60P" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>24</td>
+                  <td>영주시청</td>
+                  <td>경상북도 영주시 시청로 1 <a class="btn_map" href="http://naver.me/GUUT38Y3" target="_blank">지도보기</a></td>
+                  <td>민원실</td>
+                  <td>&#39;16.6.30</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>보현산댐 별빛전망대</td>
+                  <td>경상북도 영천시 화북면 정각리 보현산댐 <a class="btn_map" href="http://naver.me/50k7MoHi" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>26</td>
+                  <td>경산여자고등학교</td>
+                  <td>경상북도 경산시 경산로 91 <a class="btn_map" href="http://naver.me/5KeV3O5H" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;13.8.23</td>
+                </tr>
+                <tr>
+                  <td>27</td>
+                  <td>금천초등학교</td>
+                  <td>경상북도 청도군 금천면 섶마리 1길 27 <a class="btn_map" href="http://naver.me/xZ2lbuQg" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>28</td>
+                  <td>경주시청</td>
+                  <td>경상북도 경주시 양정로 260 <a class="btn_map" href="http://naver.me/F01tzN2R" target="_blank">지도보기</a></td>
+                  <td>독도영상학습관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td>명호면사무소</td>
+                  <td>경상북도 봉화군 명호면 도천길 18 <a class="btn_map" href="http://naver.me/5JKxVVRy" target="_blank">지도보기</a></td>
+                  <td>독도체험관</td>
+                  <td>&#39;15.12.18</td>
+                </tr>
+                <tr>
+                  <td>30</td>
+                  <td>울릉군청</td>
+                  <td>경상북도 울릉군 울릉읍 도동2길 66 <a class="btn_map" href="http://naver.me/Fujq6zy4" target="_blank">지도보기</a></td>
+                  <td>현관</td>
+                  <td>&#39;12.1.26</td>
+                </tr>
+                <tr>
+                  <td>31</td>
+                  <td>울릉도 독도박물관</td>
+                  <td>경상북도 울릉군 울릉읍 약수터길 90-17 <a class="btn_map" href="http://naver.me/GVs0N2EC" target="_blank">지도보기</a></td>
+                  <td>박물관 내부</td>
+                  <td>&#39;10.6.17</td>
+                </tr>
+                <tr>
+                  <td>32</td>
+                  <td>한국해양과학기지</td>
+                  <td>경상북도 울릉군 북면 현포2길 127</td>
+                  <td>현관</td>
+                  <td>&#39;17</td>
+                </tr>
+                <tr>
+                  <td>33</td>
+                  <td>하나은행 지점(19개)</td>
+                  <td>&nbsp;</td>
+                  <td>영업장 내</td>
+                  <td>&#39;12.6.20</td>
+                </tr>
+                <tr>
+                  <td>34</td>
+                  <td>기업은행 지점(19개)</td>
+                  <td>&nbsp;</td>
+                  <td>영업장 내</td>
+                  <td>&#39;13.4.22</td>
+                </tr>
+              </tbody>
+            </table>
+            </div>
+      
+      <h4>독도 관련 박물관(홍보관)현황</h4>
+
+      <div class="scrollTable">
+      <table class="table01">
+        <caption>독도 관련 박물관(홍보관)현황</caption>
+        <colgroup>
+          <col style="width: 5%;" />
+          <col style="width: 10%;" />
+          <col />
+          <col style="width: 28%;" />
+        </colgroup>
+        <thead>
+          <tr>
+            <th scope="col">번호</th>
+            <th scope="col">명칭</th>
+            <th scope="col">소재지</th>
+            <th scope="col">이용정보</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>독도박물관</td>
+            <td>경상북도 울릉군 울릉읍 약수터길 90-17 <a class="btn_map" href="http://naver.me/5wDZvzdU" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-790-6432~6, 6437</li>
+              <li>Fax 054-790-6599</li>
+              <li>관람시간 09:00-18:00</li>
+              <li>연중무휴</li>
+              <li>폐관 30분전까지 입장 요망</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>영남대 독도연구소</td>
+            <td>경북 경산시 대동 214-1 영남대학교 독도연구소 <a class="btn_map" href="http://naver.me/5Z8KbnTj" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 053-810-3686</li>
+              <li>Fax 053-810-4704</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>독도체험관(동북아역사재단)</td>
+            <td>서울특별시 서대문구 통일로 81 <a class="btn_map" href="http://naver.me/xzWGrfck" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 02-2012-6100~6101</li>
+              <li>관람시간 09:00-18:00</li>
+              <li>월요일 휴관</li>
+              <li>마지막 입장 17시</li>
+              <li>온라인방문예약가능(하루전까지)</li>
+              <li>체험가이드 서비스 사전예약제</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>독도미술관</td>
+            <td>경상북도 칠곡군 지천면 연화리 구 연화초등학교 <a class="btn_map" href="http://naver.me/FrnMyUHz" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-973-7800</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>세종대 독도연구소</td>
+            <td>서울특별시 광진구 능동로 209 광개토관 1316호 <a class="btn_map" href="http://naver.me/xE7XTqSa" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 02-3408-3115</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>독도홍보관</td>
+            <td>경기도 고양시 일산서구 일산동 <a class="btn_map" href="http://naver.me/Gh1W3DSC" target="_blank">지도보기</a></td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>한국해양과학기술원 동해연구소 동해독도홍보관</td>
+            <td>경상북도 울진군 죽변면 해양과학길 48 한국해양과학기술원 동해연구소 <a class="btn_map" href="http://naver.me/G4Axd7p4" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-780-5245</li>
+              <li>관람시간&nbsp;평일10:30~16:30</li>
+              <li>법정공휴일 휴관(토요일포함)</li>
+              <li>방문예정 2주전까지 홈페이지 신청</li>
+              <li>20명이상 신청가능(개인견학불가)</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>경산 공룡박물관</td>
+            <td>경상북도 경산시 남산면 하대리 370 삼성분교장 <a class="btn_map" href="http://naver.me/GgtPzEcH" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 053-851-5622</li>
+              <li>관람시간 10:00~17:00</li>
+              <li>매주 월,화 휴관/공휴일제외</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>경북청소년수련원 독도홍보관</td>
+            <td>경북 김천시 아포읍 대성지1길 593-43 <a class="btn_map" href="http://naver.me/GD9iOAej" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-436-0184~5</li>
+              <li>Fax 054-436-0189</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>경북환경연수원 독도홍보관</td>
+            <td>경상북도 구미시 금오산로 336-97 <a class="btn_map" href="http://naver.me/GbmwoHeN" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-452-4509, 457-0619</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>경북도립구미도서관 독도체험관</td>
+            <td>경상북도 구미시 산책길 41 <a class="btn_map" href="http://naver.me/Gv0asKj7" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-450-7000</li>
+              <li>Fax 054-458-8370</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>경북도립안동도서관 독도체험장</td>
+            <td>경상북도 안동시 안기천로 48 <a class="btn_map" href="http://naver.me/FTFhPpPl" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-840-8414</li>
+              <li>Fax 054-854-5149</li>
+              <li>관람시간 평일 09:00 ~ 20:00, 토&middot;일 09:00~17:00</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>13</td>
+            <td>경상북도학생문화회관 독도교육체험관</td>
+            <td>경상북도 포항시 북구 환호로 50 <a class="btn_map" href="http://naver.me/GrIbDZ7y" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-245-7715</li>
+              <li>Fax 054-245-7720</li>
+              <li>관람시간 09:00~21:00</li>
+              <li>토,일,법정공휴일 휴관</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>14</td>
+            <td>경북학생해양수련원 독도＆거북선체험실</td>
+            <td>경상북도 영덕군 병곡면 고래불로 201 <a class="btn_map" href="http://naver.me/FPJBhqxP" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-730-5516</li>
+              <li>관람시간 09:00~18:00</li>
+              <li>연중무휴</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>15</td>
+            <td>경북교육정보센터 독도교육체험관</td>
+            <td>경상북도 경산시 원효로 60 <a class="btn_map" href="http://naver.me/xRTPHqkK" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>관람시간 평일 09:00~18:00, 주말 09:00~17:00</li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>16</td>
+            <td>구미 금오랜드 내 홍보관</td>
+            <td>경상북도 구미시 금오산로 341 <a class="btn_map" href="http://naver.me/5lb1FEVU" target="_blank">지도보기</a></td>
+            <td>
+            <ul>
+              <li>Tel 054-451-8500</li>
+              <li>관람시간
+              <ul>
+                <li>평일 4월~9월:10:00~18:00</li>
+                <li>평일 10월~3월:09:30~17:30</li>
+                <li>주말 4월~9월:10:00~19:00</li>
+                <li>주말 10월~3월:09:30~18:30</li>
+                <li>여름야간개장:10:00~22:00</li>
+              </ul>
+              </li>
+            </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>17</td>
+            <td>대구 50보병사단 내 홍보관</td>
+            <td>대구광역시 북구 학정동 <a class="btn_map" href="http://naver.me/GWtEvalb" target="_blank">지도보기</a></td>
+            <td>&nbsp;</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div id="footer">
+      <div class="container">
+        <ul class="footer_extra">
+          <li><a href="https://www.koreadokdo.or.kr/contents/sub06/page.html?mid=006025">개인정보처리방침</a></li>
+          <li><a href="https://www.koreadokdo.or.kr/contents/sub06/page.html?mid=006027">이용약관</a></li>
+          <li><a href="https://www.koreadokdo.or.kr/contents/sub06/page.html?mid=006030">이메일무단수집거부</a></li>
+          <li><a href="https://www.koreadokdo.or.kr/contents/sub06/page.html?mid=006029">홈페이지불편신고</a></li>
+          <li><a href="https://www.koreadokdo.or.kr/contents/sub06/page.html?mid=006022">사이트맵</a></li>
+        </ul>
+        <div class="footer_sns">
+          <ul>
+            <li class="facebook"><a href="https://www.facebook.com/dokdojd"><img src='https://ifh.cc/g/uVyjU8.png' width="32" height="32"></a></li>
+            <li class="instagram"><a href="https://www.instagram.com/k_dokdo/"><img src='https://ifh.cc/g/CweWN6.png' width="32" height="32"></a></li>
+            <li class="blog"><a href="https://blog.naver.com/dokdojd"><img src="https://ifh.cc/g/pBFFH9.png' border='0'" width="32" height="32"></a></li>
+            <li class="youtube"><a href="https://www.youtube.com/user/dokdojd"><img src='https://ifh.cc/g/RLO8m0.png' width="32" height="32"></a></li>
+          </ul>
+        </div>
+        <div class="footer_info">
+          <span>우) 37751 경상북도 포항시 북구 중흥로 231 동양빌딩 9층</span>
+          <span>이메일 : dokdo@koreadokdo.or.kr</span>
+          <span>대표번호 : <a href="tel:0542726513" style="text-decoration: none;">054-272-6513</a></span>
+          팩스번호 : 054-272-6515
+          <p>COPYRIGHT 2019. BY 재단법인 독도재단. ALL RIGHTS RESERVED. Design by KOWEB.</p>  
+        </div>
+        <div class="top_button">
+          <a href="#header1"><img src='https://ifh.cc/g/OMZ9bp.jpg' width="100" height="100"></a>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+</body>
+</html>
+

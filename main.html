@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+	<style>
+	h1, h2, h3, h4, h5, h6, input, textarea, button, select, table{font-size: 1em;}
+
+	body, p, div, span, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select{margin: 0px; padding: 0;}
+
+	body{font-size: 15px; font-family: 'Montserrat', 'Noto Sans KR' , '맑은 고딕', '돋움', Dotum, '굴림', Gulim, Sans-serif; overflow-x: hidden;}
+
+	address, em{font-style: normal;}
+	input[type=submit], input[type=button], button {cursor: pointer;}
+	ul, ol, li{list-style: none; margin: 0; padding: 0;}
+	img, fieldset, button { border: 0;}
+
+	h1{display: block; margin-block-start: 0.67em; margin-block-end: 0.67em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;}
+	h2{display: block; font-size: 1.5em; margin-block-start: 0.83em; margin-block-end: 0.83em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;}
+	h3 {display: block; font-size: 1.17em; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; font-weight: bold;}
+
+	ul{display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px; padding-inline-start: 40px;}
+	li{display: list-item; text-align: -webkit-match-parent;}
+
+
+	i{font-style: normal;}
+	p{display: block; margin-block-start: 1em; margin-block-end: 1em; margin-inline-start: 0px; margin-inline-end: 0px;}
+
+	button {appearance: auto;-webkit-writing-mode: horizontal-tb !important; text-rendering: auto; color: -internal-light-dark(black, white); letter-spacing: normal; word-spacing: normal; text-transform: none; text-indent: 0px; text-shadow: none; display: inline-block; text-align: center; align-items: flex-start; cursor: default; background-color: -internal-light-dark; box-sizing: border-box; margin: 0em; font: 400 13.3333px Arial; padding: 1px 6px; border-width: 2px; border-style: outset; border-color: -internal-light-dark; border-image: initial;}
+	
+	a:link{text-decoration:none; color:#444;}
+	a:visited{text-decoration:none; color:#444;}
+	a:hover{text-decoration:none; color:#444;}
+	a:active{text-decoration:none;}
+	a:focus{text-decoration:none;}
+
+	#wrap{
+		z-index: 1;
+		position: relative;
+		width: 100%;
+	}
+
+	#wrap #header{transform: translateY(0);}
+
+	/*header*/
+	#header{position:absolute; top:0px; left:0px; z-index:50; width:100%; box-sizing:border-box; padding-top:46px;}
+
+	#header .logo{width: 190px; height: 35px; margin: 0 0 38px 70px;}
+
+	#header .logo a{display: block; height: 100%; background: url(http://www.koreadokdo.or.kr/images/common/logo.svg) no-repeat 50% 0; background-size: 190px 36px; text-indent: 100%; overflow: hidden; white-space: nowrap;}
+
+
+	/*메인로고*/
+
+	.mainlogo_image > a > img{
+		margin-top: 45px;
+	}
+
+/*헤더부분의 3단메뉴*/
+
+	ul, li {margin:0; padding:0; list-style: none;   }
+
+	a {text-decoration: none;  display:block; font-size:17px;  }
+
+
+	.header1_menu{
+		display: flex;
+	}
+
+	.nav {
+		display: flex;
+		position: absolute; 
+		top:55px; 
+		right:780PX; 
+		width: 700px;
+		font-family: 'Noto Sans KR', sans-serif;
+		font-weight: bolder;
+		z-index: 1000;
+	}
+
+	.nav .menu-1 {
+		width: 100%
+	}
+
+	/* 2단 메뉴 */
+	.nav .menu-1 .link-1 {
+		/* 꾸미기*/
+		background-color: rgba( 255, 255, 255, 0 );
+		color: black;
+		padding: 3px 15px;
+		font-size: 16px;
+
+	}
+
+	.nav .menu-1 .list-1 {
+		font-size:15px; 
+		font-weight:300;
+		/*display: none;*/
+		opacity: 0;
+		transition: opacity 0.4s; pointer-events: none;
+
+
+		/* 꾸미기 */
+		/*padding-right: 1px;*/
+		background-color: #41478f;
+	}
+
+	.nav .menu-1 .link-1:hover {
+		color:#41478f;
+		text-decoration: none;
+		background:url(http://www.koreadokdo.or.kr/images/common/img_gnb_arrow.png) no-repeat 50% 0 ;
+		background-position:right center;
+
+	}
+
+
+	.nav .menu-1 .link-1:hover+.list-1,
+	.nav .menu-1 .list-1:hover{
+		/*display: block;*/
+		opacity: 1;
+		pointer-events: auto;
+	}
+	
+	.nav .menu-1 .list-1 .link-2 {
+		/* 꾸미기 */
+		text-align: left;
+		background-color: #383a4a;
+		color: #9c9da5;
+		height: auto;
+		box-shadow:3px 15px 15px rgba(0,0,0,0.15);
+		padding-top: 20px;
+		padding-bottom: 12px;
+		padding-left: 15px;
+
+	}
+
+	.nav .menu-2 .link-2 .triangle:hover {
+		text-decoration: none;
+	}
+
+
+	/* 3단 메뉴 */
+	.nav .menu-2 {
+		position: relative;
+		width: 145%;
+		left: -39px;
+
+
+	}
+	.nav .menu-2 .list-2 {
+		/*display: none; */ 
+		opacity: 0;
+		transition: opacity 0.6s; pointer-events: none;
+
+	}
+
+	.nav .menu-2 .link-2:hover {
+		/* 꾸미기 */
+		text-decoration: underline;
+		background-color:#383a4a;
+		color:#fee7a8;
+	}
+	.nav .menu-2 .link-2:hover+.list-2,
+	.nav .menu-2 .list-2:hover{
+		/*display: block;*/
+		opacity: 1;
+		pointer-events: auto;
+	}
+	.nav .menu-2 .list-2{
+		position: absolute;
+		top:0;
+		left:100%;
+		width:120px;
+		right:-300px; min-width:230px; box-sizing:border-box; padding:15px 30px; background:#fff; border:1px solid #41478f;
+
+	}
+	.nav .menu-2 .list-2 .link-3 {
+		text-align: center;
+		vertical-align: middle;
+		font-size:15px; 
+		/*font-weight:bold;*/
+		display:block; 
+		position:relative;
+		padding:15px 15px 15px 15px; 
+		text-align:left; 
+		color:#c2c2c2; 
+		width: 98%;
+		letter-spacing:-1px; 
+		word-break:keep-all; 
+		transition:background 0.3s ease 0s;
+		;
+		/* 꾸미기 */
+		background-color: white;
+		color: black;
+
+	}
+
+	.nav .menu-2 .list-2 .link-3:hover {
+		/* 꾸미기 */
+		text-decoration: underline;
+		background-color:white;
+		color:#41478f;
+
+
+	}
+
+
+	/*로그인/회원가입*/
+	#header1 .area_util{position:absolute; top:52px; right:90px; z-index:90; color: white;}
+
+	#header1 .area_util > ul,
+	#header1 .area_util .area_lang{display:inline-block; right: 20px;}
+
+	#header1 .area_util > ul > li{display:inline-block; margin-right: 35px; font-size: 14px; }
+
+	#header1 .area_util > ul > li > a{display:inline-block; position:relative; margin:0 5px; color:#666; font-weight:300; transition:all 0.3s ease 0.4s;}
+
+	#header1 .area_util a[data-util]{padding-left:15px;}
+
+	#header1 .area_util a[data-util]:before{content:''; display:block; position:absolute; top:-18px; right:-7px; width:26px; height:26px; background-image:url(http://www.koreadokdo.or.kr/images/common/sp_com.png); background-repeat:no-repeat; background-position-y:-41px; transition:background-position-y 0s ease 0.5s;}
+
+	#header1 .area_util a[data-util="login"]:before{background-position-x:-196px;}
+
+	#header1 .area_util a[data-util="join"]:before{background-position-x:-222px;}
+
+	#header1 .area_util a[data-util="logout"]:before{background-position-x:-248px;}
+
+	#header1 .area_util a[data-util="mypage"]:before{background-position-x:-274px;}
+
+	#header1 .area_util .area_lang{position:relative; margin-left:15px;}
+
+	#header1 .area_util .area_lang button{
+		position:relative; 
+		width:125px; 
+		height:33px; 
+		box-sizing:border-box; 
+		padding:5px 15px 5px 10px; 
+		background:transparent; 
+		/*border-bottom:1px solid #444; */
+		color:#666; 
+		text-align:left; 
+		transition:all 0.3s ease 0.4s;}
+
+		#header1 .area_util .area_lang button:after{
+			content:''; 
+			display:block; 
+			position:absolute; 
+			top:13px; 
+			right:7px; 
+			/*border-top:4px solid #999; */
+			border-left:3px solid transparent; 
+			border-right:3px solid transparent; 
+			transition:all 0.3s ease 0.4s;transform 0.3s ease 0s;}
+
+			/*area_sns*/
+			.area_sns{position:absolute; top:0; left:0px; z-index:80; width:70px; height: 938px; background: #fff;}
+			.area_sns ul{position:relative; top:50%; transform:translateY(-50%);}
+			.area_sns ul li{margin-top:30px;}
+			.area_sns ul li > a{display:block; position:relative; width:23px; height:23px; margin:0 auto; text-indent:100%; overflow:hidden; white-space:nowrap; transition:all 0.3s ease 0s;}
+			.area_sns ul li > a:before{content:''; display:block; position:absolute; top:0px; left:0px; width:100%; height:100%; background-image:url(http://www.koreadokdo.or.kr/images/common/sp_com.png); background-repeat:no-repeat; background-position-y:0;}
+			.area_sns ul li > a[data-sns="face"]:before{background-position-x:0;}
+			.area_sns ul li > a[data-sns="insta"]:before{background-position-x:-23px;}
+			.area_sns ul li > a[data-sns="blog"]:before{background-position-x:-46px;}
+			.area_sns ul li > a[data-sns="tube"]:before{background-position-x:-69px;}
+			.area_sns ul li > a:hover,
+			.area_sns ul li > a:focus{opacity:0.6;}
+
+			/*scroll*/
+			.area_sns .scroll{left: 50%; bottom: 0px; margin-left: -50px;}
+			.area_sns .scroll span{display: block;margin-top: 495px; margin-bottom: 40px; font-size: 13px; letter-spacing: 1.5px; transform: rotate(-90deg);color: #444444;}
+			.area_sns .scroll i{display: block; overflow: hidden; position: relative; width: 1px; height: 140px; margin: 0 auto; background: rgba(210,212,201,0.7);}
+			.area_sns .scroll i:before{content: ''; display: block; position: absolute; top: 0px; left: 0px; width: 100%; height: 50px; background: #404040; animation: scroll 6s cubic-bezier(0.48, 0.13, 0.09, 0.99) infinite;}
+
+			@keyframes scroll{
+				0%{transform: translateY(-50px);}
+				100%{transform: translateY(500%);}}
+
+				/*video*/
+				.area_visual{position: relative; box-sizing: border-box; padding: 120px 0 0 70px;}
+
+				.area_visual .video{position: relative; width: 1230px; height: 745px; background: url(http://www.koreadokdo.or.kr/images/main/img_visual01.jpg) no-repeat 50% 0; background-size: cover; text-align: center;}
+
+				.area_visual .video video{width: auto; height: 100%; object-fit: contain;}
+
+				video{object-fit: contain;}
+
+
+				/*container*/
+				.container .area_link_open ul li img{width: 48px; height: 49px; margin: 0 auto; vertical-align: top; border: 0;}
+				.container .area_link_open ul li {width: 18%; transform: translateX(-10px); float: left; text-align: center;}
+				.container .area_link_open ul li a{display: inline-block; margin: 40px 0;}
+				.container .area_link_open ul li a span{display: block; font-weight: 300; color: #fff;}
+				.container .area_link_open{opacity: 0; position: absolute; top: 50%; right: -500px; z-index: 20; transform: translateX(33%) translateY(-212%); transition:all 0.8s cubic-bezier(0, 0.15, 0.44, 0.89);}
+				.container .link {position:absolute; top:-865px; right:-252px; width:47.75%; height: 938px;  background:linear-gradient(140deg, #41478f 35%, #c1445a); transition:all 0.8s cubic-bezier(0, 0.15, 0.44, 0.89); z-index: 11;}
+				.container .area_link_open ul li:hover{opacity: 50%;}
+
+				/* 글씨 효과 */
+					@keyframes showItem {
+						from {
+							transform: translateX(-20px);
+							opacity: 0;
+							color: aqua;}
+							to {
+								transform: translateX(0px);
+								opacity: 1;}}
+
+							.stagger-item {animation: showItem 0.5s; animation-fill-mode: both; color: #fff;font-family:'AritaBuri',serif; font-size:80px;}
+
+							.stagger-item:nth-child(1) {display:block; position:absolute; top:32%; left:100px; z-index:10;  transform:translateY(-70%);animation-delay: 1s;font-family: 'Nanum Myeongjo';font-size:80px; font-weight:400;}
+
+							.stagger-item:nth-child(2) {display:block; position:absolute; top:45%; left:100px; z-index:10;  font-weight:200;transform:translateY(-70%);font-size: 50px;animation-delay: 2s;font-size:49px;font-weight:200;}
+
+							.stagger-item:nth-child(3) {display:block; position:absolute; top:51%; left:100px; z-index:10;  transform:translateY(-70%);font-size: 49px;font-weight:200;animation-delay: 3s;}
+
+							/*버튼*/
+							input[id="menuicon"]{display: none;}
+
+
+							/*열리는 버튼*/
+							label{display: block; position: absolute; top: 46%; right: 32.3%; z-index: 25; width: 100px; height: 100px; box-sizing: border-box; padding-top: 30px; background: #27272f; font-size: 13px; color: #fff; font-weight: 300; letter-spacing: 1.5px; box-shadow: 0px 15px 15px rgb(0 0 0 / 15%); transition:all 0.8s cubic-bezier(0, 0.15, 0.44, 0.89); cursor: pointer;}
+							label span{display: block; position: absolute; left: 50%; width: 14px; height: 1px; margin-left: -7px; background: #fff; border-radius: 10px; transition:all 0.8s cubic-bezier(0, 0.15, 0.44, 0.89);}
+							.font{display: block; position: relative; font-size: 13px; color: #fff; font-weight: 300; letter-spacing: 1.5px; left: 37%; margin-left: -7px; transition: all 0.5s ease; top: 30px;}
+
+							label span:nth-child(1){top: 30px; transform: rotate(-35deg);}
+							label span:nth-child(2){top: 38px; transform: rotate(35deg);}
+							label .font:nth-child(3){top: 30px;}
+
+							input[id="menuicon"]:checked ~ .area_visual label{z-index: 25; right: 77.5%;}
+							input[id="menuicon"]:checked ~ .area_visual label span:nth-child(1){top: 30px; transform: rotate(35deg);}
+							input[id="menuicon"]:checked ~ .area_visual label span:nth-child(2){top: 38px; transform: rotate(-35deg);}
+							input[id="menuicon"]:checked ~ .container .link {width: 108.5%;}
+							input[id="menuicon"]:checked ~ .container .area_link_open {opacity: 1; right: 100px;}
+
+
+							/*비디오버튼*/
+							#vidbutton{position: absolute; bottom: -50px; left: 50px; z-index: 10; width: 100px; height: 100px; background: #fff; box-shadow: 5px 15px 15px rgb(0 0 0 / 15%); font-size: 13px; font-weight: 300; letter-spacing: 1.5px; text-align: center; border: 0; font: 400 13.3333px Arial; box-sizing: border-box; cursor: pointer;}
+
+							.video button:before{content: ''; display: block; width: 32px; height: 30px; margin: 0 auto 12px; background-repeat: no-repeat; background-position: -46px -41px; z-index: 11; position: relative; background-image: url(playicon.png);}
+
+							/*obj_dokdo*/
+							.obj_dokdo{position: absolute; bottom: 0px; z-index: 3; height: 364px; width: 1452px; right: 0px; background: url(http://www.koreadokdo.or.kr/images/main/img_dokdo.png) no-repeat 50% 0; transition: all 0.3s ease;}
+
+							.obj_dokdo:before{content: ''; display: block; position: absolute; bottom: 78px; right: 80px; width: 557px; height: 231px; background: url(http://www.koreadokdo.or.kr/images/main/img_cloud.png) no-repeat 50% 0; background-size: 100%; transition: all 5s ease; perspective: 400px; animation: ani 3s infinite alternate;}
+
+							@keyframes ani{0%{transform:translate(0,0);}100%{transform:translate(0,5px);}}
+
+							/*canvas*/
+							/*열린 후 별 등장*/
+							.container .link:after{content:''; opacity:0; display:block; position:absolute; bottom:0px; left:0px; z-index:1; width:100%; height:100%; background:url(linkstar.png) no-repeat 0 100%; transition:all 0.6s ease 0.3s;}
+
+							input[id="menuicon"]:checked ~ .container .link:after{opacity: 1; display: block; position: absolute; z-index: 1; background: url(linkstar.png) no-repeat 0 100%; transition: all 0.6s ease 0.3s;}
+
+
+							/*별똥별*/
+							/*shooting*/
+							.shooting{position: absolute; top: 20%; right: 45%;}
+
+							.shooting i{display: block; position: absolute; width: 1px; height: 300px; background: transparent; transform: rotate(38deg);}
+
+							.shooting i:before{content: ''; display: block; position: absolute; top: 0px; right: 0px; width: 100%; height: 200px; background: #fff; animation: shootingstar 4s cubic-bezier(0.48, 0.13, 0.09, 0.99) infinite; opacity: 30%; z-index: 2;}
+
+
+							/*shooting2*/
+							.shooting2{position: absolute; top: 40%; left: 20%;}
+
+							.shooting2 i{display: block; position: absolute; width: 1px; height: 300px; background: transparent; transform: rotate(38deg);}
+
+							.shooting2 i:before{content: ''; display: block; position: absolute; top: 0px; right: 0px; width: 100%; height: 200px; background: #fff; animation: shootingstar 4s cubic-bezier(0.31, 0.13, 0.09, 0.99) infinite; opacity: 30%; z-index: 2;}
+
+							@keyframes shootingstar{
+								0%{transform: translateY(-50px);}
+								100%{transform: translateY(500%);}}
+
+								/*처음 애니매이션*/
+								.obj_open {position: absolute; top: 0px; left: 65%; z-index: 50; width: 0; height: 938px; background: #41478f; background-image: linear-gradient(140deg, #41478f 35%, #c1445a); perspective: 400px;}
+
+								.obj_open.show {animation: open 1.5s ease-in-out 0s forwards;}
+
+								@keyframes open{
+									0%{left:0; width:100%;}
+									48%{left:0; width:100%;}
+									50%{left:0; width:100%;}
+									100%{left:100%; width:35%;}}
+
+									#content{
+										padding: 0 70px;
+									}
+									#content .title em{
+										display: inline-block;
+										font-size: 13px;
+										color: #404040;
+										letter-spacing: 2px;
+									}
+									#content .title em:before {
+										content: '';
+										display: block;
+										width: 100%;
+										height: 1px;
+										margin-bottom: 5px;
+										background: #404040;
+									}
+									#content .inr {
+										max-width: 1400px;
+										position: relative;
+										margin: 0 auto;
+									}
+									#content .title h2 {
+										margin-top: 20px;
+										font-size: 28px;
+										color: #333;
+										font-weight: 500;
+										letter-spacing: -1px;
+									}
+									#content .title p {
+										margin-top: 40px;
+										color: #8b8b8b;
+										font-weight: 300;
+									}
+									#content .btn_more {
+										display: block;
+										position: relative;
+										width: 25px;
+										height: 25px;
+										text-indent: 100%;
+										overflow: hidden;
+										white-space: nowrap;
+									}
+									#content .btn_more:before {
+										left: 0px;
+										top: 50%;
+										width: 100%;
+										height: 1px;
+									} 
+									#content .btn_more:before, #content .btn_more:after {
+										content: '';
+										display: block;
+										position: absolute;
+										background: #bebed3;
+									}
+									#content .btn_more:after {
+										top: 0px;
+										left: 50%;
+										width: 1px;
+										height: 100%;
+									}
+									#content .btn_more:before, #content .btn_more:after {
+										content: '';
+										display: block;
+										position: absolute;
+										background: #bebed3;
+									}
+
+
+
+
+									.area_notice{
+										position: relative;
+									}
+									.area_notice:before {
+										left: 0px;
+										background: #f4f4f9;
+									}
+									.area_notice:after {
+										right: 0px;
+										background: #f9fafa;
+									}
+									.area_notice:before, .area_notice:after {
+										content: '';
+										display: block;
+										position: absolute;
+										top: 0px;
+										z-index: -1;
+										width: 50%;
+										height: 100%;
+									}
+									.area_notice .title{
+										position: absolute;
+										top: 70px;
+										/*    left: 0px;*/
+									}
+									.area_notice .area_tab_main {
+										position: relative;
+										width: calc(100% - 300px);
+										box-sizing: border-box;
+										margin-left: 300px;
+										padding: 70px 10px 70px 40px;
+										background: #f9fafa;
+									}
+									.area_notice .area_tab_main button.on {
+										left: -87px;
+										width: 120px;
+										background: #41478f;
+										color: #fff;
+										box-shadow: 0 15px 15px rgb(65 71 143 / 20%);
+									}
+
+									.area_notice .area_tab_main button:nth-of-type(1) {
+										top: calc(0px + 70px);
+									}
+									.area_notice .area_tab_main button {
+										position: absolute;
+										left: -117px;
+										width: 117px;
+										heigfht: 50px;
+										line-height: 50px;
+										box-sizing: border-box;
+										padding: 0 10px 0 15px;
+										background: transparent;
+										border-bottom: 1px solid #e1e1e1;
+										text-align: left;
+										transition: all 0.3s ease;
+										outline:none;
+									}
+									.area_notice .area_tab_main button.on {
+										left: -87px;
+										width: 120px;
+										background: #41478f;
+										color: #fff;
+										box-shadow: 0 15px 15px rgb(65 71 143 / 20%);
+									}
+									.area_notice .list{
+										display: none;
+									}
+									.area_notice .area_tab_main .list:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+									.area_notice .area_tab_main .list ul:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+									.area_notice .area_tab_main .list li {
+										float: left;
+										width: calc(100% / 3);
+										height: 225px;
+										margin-left: -0.1%;
+										box-sizing: border-box;
+										padding-left: 40px;
+									}
+									.area_notice .area_tab_main .list li a {
+										display: block;
+										position: relative;
+										height: 100%;
+									}
+									.area_notice .area_tab_main .list li a span {
+										display: block;
+										height: 4.8em;
+										line-height: 1.6em;
+										margin-top: 15px;
+										color: #666;
+										display: -webkit-box;
+										overflow: hidden;
+										-webkit-line-clamp: 3;
+										-webkit-box-orient: vertical;
+										text-overflow: ellipsis;
+									}
+									.area_notice .area_tab_main .list li a em {
+										display: block;
+										height: 3.2em;
+										font-size: 18px;
+										color: #333;
+										font-weight: 400;
+										letter-spacing: -0.5px;
+										line-height: 1.6em;
+										display: -webkit-box;
+										overflow: hidden;
+										-webkit-line-clamp: 2;
+										-webkit-box-orient: vertical;
+										text-overflow: ellipsis;
+										word-break: keep-all;
+									}
+									.area_notice .area_tab_main .list li a em i {
+										transition: all 0.3s ease;
+									}
+									.area_notice .btn_more {
+										position: absolute;
+										left: -340px;
+										bottom: 0;
+									}
+									.area_notice .area_tab_main .list li a > i {
+										display: block;
+										position: absolute;
+										bottom: 0px;
+										left: 0;
+										color: #9a9a9a;
+										font-weight: 300;
+									}
+									.area_notice .btn_more {
+										position: absolute;
+										left: -340px;
+										bottom: 0;
+									}
+									.area_notice .area_tab_main button:nth-of-type(2) {
+										top: calc(70px + 70px);
+									}
+									.area_notice .btn_more {
+										position: absolute;
+										left: -340px;
+										bottom: 0;
+									}
+									.area_notice .area_tab_main button:nth-of-type(3) {
+										top: calc(140px + 70px);
+									}
+									.area_notice:after {
+										right: 0px;
+										background: #f9fafa;
+									}
+									.area_banner{
+										width: 447.5;
+										height: 447; 
+									}
+
+									.area_middle {
+										position: relative;
+									}
+									.area_middle:after{
+										content:'';
+										display:block;
+										position:absolute;
+										top:0px;right:0px;
+										z-index:-1;
+										width:50%;height:100%;
+										background:#f6f1f2;
+									}
+
+									.area_middle .area_event {
+										padding: 65px 65px 65px 0;
+									}
+									.area_middle article {
+										float: left;
+										position: relative;
+										width: 50%;
+										box-sizing: border-box;
+									}
+									.area_middle .area_banner {
+										padding: 65px 0 65px 50px;
+									}
+									.area_middle.active .area_banner:after {
+										transition-delay: 0.5s;
+									}
+									.area_middle.active article:after {
+										width: 0px;
+									}
+									.area_middle .area_banner:after {
+										background: #f6f1f2 !important;
+									}
+									.area_middle article:after {
+										content: '';
+										display: block;
+										position: absolute;
+										top: 0px;
+										right: 0px;
+										z-index: 50;
+										width: 100%;
+										height: 100%;
+										background: #fff;
+										transition: all 1s ease 0s;
+									}
+									.area_middle .inr:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+
+
+
+									.area_banner .title {
+										position: absolute;
+										top: 65px;
+										left: 50px;
+									}
+									.area_banner .bx-wrapper {
+										margin-left: 140px;
+									}
+
+									.bx-wrapper element.style {
+										width: 100%;
+										overflow: hidden;
+										position: relative;
+										height: 242px;
+									}
+									.bx-wrapper.list element.style{
+										width: 6215%;
+										position: relative;
+										transition-duration: 0s;
+										transform: translate3d(-936px, 0px, 0px);
+									}
+									.bx-wrapper.list li element.style{
+										float: left;
+										list-style: none;
+										position: relative;
+										width: 204px;
+										margin-right: 30px;
+									}
+									bx-viewport ul> li > a style attribute {
+										float: left;
+										list-style: none;
+										position: relative;
+										width: 204px;
+										margin-right: 30px;
+									}
+									.area_banner .list:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+									.area_middle.active .bx-controls-direction {
+										left: 0px;
+										margin-bottom: 8px;
+										transition-delay: 1s;
+									}
+
+
+
+
+									.area_banner .bx-controls-direction {
+										position: absolute;
+										bottom: 65px;
+										left: 10px;
+										transition: left 0.5s ease 0s;
+									}
+									.area_banner .bx-controls-direction a {
+										display: inline-block;
+										position: relative;
+										width: 100px;
+										height: 66px;
+										box-sizing: border-box;
+										background: #d84351;
+										text-indent: 100%;
+										overflow: hidden;
+										white-space: nowrap;
+										box-shadow: 0 15px 15px rgb(216 67 81 / 20%);
+										transition: all 0.5s ease;
+									}
+									.area_banner .bx-controls-direction a:before {
+										content: '';
+										display: block;
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										width: 32px;
+										height: 6px;
+										margin: -3px 0 0 -16px;
+										background: url(http://www.koreadokdo.or.kr/images/common/sp_com.png) no-repeat -23px -25px;
+									}
+									.area_banner .bx-controls-direction a.bx-next {
+										border-left: 1px solid rgba(229,79,93,0.5);
+									}
+									.area_banner .bx-controls-direction a.bx-next:before {
+										background-position: -23px -33px;
+									}
+
+									.area_event .title {
+										position: absolute;
+										top: 65px;
+										left: 0px;
+									}
+									.area_event .list {
+										margin-left: 150px;
+									}
+									.area_event .list:after{
+										content: '';
+										display: block;
+										clear: both;
+									}
+									.area_event .btn_more {
+										position: absolute !important;
+										bottom: 65px;
+										left: 0px;
+									}
+									a:link {
+										text-decoration: none;
+										color: #444;
+									}
+									a:-webkit-any-link {
+										color: -webkit-link;
+										cursor: pointer;
+										text-decoration: none;
+									}
+
+									.area_event .title {
+										position: absolute;
+										top: 65px;
+										left: 0px;
+									}
+									.area_event .list li {
+										float: left;
+										width: 50%;
+										height: 287px;
+										box-sizing: border-box;
+										padding-left: 35px;
+									}
+									.area_event .list li a em {
+										display: block;
+										height: 2.8em;
+										line-height: 1.4em;
+										margin-top: 70px;
+										color: #333;
+										font-size: 16px;
+										letter-spacing: -0.5px;
+										display: -webkit-box;
+										overflow: hidden;
+										-webkit-line-clamp: 2;
+										-webkit-box-orient: vertical;
+										text-overflow: ellipsis;
+										word-break: keep-all;
+									}
+									.area_event .list li a > * {
+										transition: all 0.3s ease;
+									}
+									.area_event .list li a span {
+										display: block;
+										height: 4.2em;
+										line-height: 1.4em;
+										margin-top: 20px;
+										color: #666;
+										letter-spacing: -0.5px;
+										font-weight: 300;
+										display: -webkit-box;
+										overflow: hidden;
+										-webkit-line-clamp: 3;
+										-webkit-box-orient: vertical;
+										text-overflow: ellipsis;
+									}
+									.area_event .list li a > i {
+										position: absolute;
+										top: 0px;
+										left: 0px;
+										padding: 10px;
+										border-right: 1px solid #f0f0f0;
+										border-bottom: 1px solid #f0f0f0;
+										font-size: 18px;
+										color: #7d7fa2;
+									}
+									.area_event .list li a:after {
+										content: '';
+										display: block;
+										position: absolute;
+										right: 30px;
+										bottom: 30px;
+										width: 21px;
+										height: 6px;
+										background: url(http://www.koreadokdo.or.kr/images/common/sp_com.png) no-repeat 0 -29px;
+									}
+									.area_event .list li a {
+										display: block;
+										position: relative;
+										height: 100%;
+										box-sizing: border-box;
+										padding: 15px;
+										border: 1px solid #e1e1e1;
+										transition: all 0.3s ease;
+									}
+									.area_event .list li a:after {
+										content: '';
+										display: block;
+										position: absolute;
+										right: 30px;
+										bottom: 30px;
+										width: 21px;
+										height: 6px;
+										background: url(http://www.koreadokdo.or.kr/images/common/sp_com.png) no-repeat 0 -29px;
+									}
+									.area_event .list:after {
+										content: '';
+										display: block;
+										clear: both;  
+									}
+
+									.area_bottom .area_live, .area_bottom .box {
+										float: left;
+										width: 50%;
+										height: 525px;
+									}
+									.area_bottom .box {
+										position: relative;
+										background: url(http://www.koreadokdo.or.kr/images/main/bg_road.gif) repeat-x 100% 100%;
+									}
+									.area_bottom .area_live, .area_bottom .box {
+										float: left;
+										width: 50%;
+										height: 525px;
+									}
+									.area_bottom .area_live:before, .area_bottom .box:before {
+										content: '';
+										display: block;
+										position: absolute;
+										top: 0px;
+										right: 0px;
+										z-index: 50;
+										width: 100%;
+										height: 100%;
+										background: #fff;
+										transition: all 1s ease 0s;
+									}
+									.area_bottom .box > article {
+										float: left;
+										position: relative;
+										height: 100%;
+									}
+									.area_bottom.active .box:before {
+										width: 0px;
+										transition-delay: 0.5s;
+									}
+									.area_bottom:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+
+
+
+									.area_live {
+										position: relative;
+										background: url(http://www.koreadokdo.or.kr/images/main/bg_live.jpg) no-repeat 100% 0;
+									}
+									.area_live .play {
+										width: 450px;
+										height: 100%;
+										box-sizing: border-box;
+										padding: 65px 33px;
+										background: #41478f;
+									}
+									.area_live h2 {
+										margin-bottom: 30px;
+										color: #fff;
+										font-weight: 300;
+										text-align: center;
+										letter-spacing: 1px;
+									}
+									.area_live .play iframe {
+										overflow: hidden;
+										width: 100%;
+										border: 0px;
+									}
+									.area_live h2:before {
+										content: '';
+										display: block;
+										width: 38px;
+										height: 50px;
+										margin: 0 auto 10px;
+										background: url(http://www.koreadokdo.or.kr/images/common/sp_com.png) no-repeat 0 -49px;
+									}
+									.area_live .play .jw-error, .area_live .play iframe {
+										height: 240px !important;
+										background: url(http://www.koreadokdo.or.kr/images/main/img_live01_new.jpg) no-repeat 50% 0;
+									}
+									.area_live .play p {
+										margin-top: 20px;
+										color: #fff;
+										text-align: center;
+										font-weight: 300;
+									}
+									.area_live .info {
+										position: absolute;
+										bottom: 0px;
+										left: 450px;
+										width: 240px;
+										box-sizing: border-box;
+										padding: 50px 33px;
+										background: #fff;
+									}
+									.area_live .info em {
+										font-size: 23px;
+										color: #41478f;
+									}
+									.area_live .info p {
+										margin-top: 20px;
+										color: #666;
+										line-height: 1.4em;
+										font-weight: 300;
+										letter-spacing: -0.5px;
+									}
+									.area_live .info p span {
+										color: #41478f;
+									}
+									.area_bottom.active .area_live:before {
+										width: 0px;
+									}
+
+
+
+									.area_ebook{
+										width: 345px;
+									}
+									.area_ebook .title {
+										height: calc(100% - 188px);
+										box-sizing: border-box;
+										padding: 50px 50px 0;
+									}
+									.area_ebook .info {
+										position: relative;
+										height: 188px;
+										background: #d84351;
+									}
+									.area_ebook .info > a {
+										display: block;
+										padding: 20px 20px 0;
+									}
+									.area_ebook .info > a i {
+										display: block;
+										font-size: 16px;
+										color: #fff;
+									}
+									.area_ebook .info .img {
+										display: block;
+										overflow: hidden;
+										position: absolute;
+										top: -170px;
+										left: 50%;
+										width: 164px;
+										height: 219px;
+										background-repeat: no-repeat;
+										background-position: 50% 50%;
+										background-size: 100%;
+										box-shadow: 0 15px 15px rgb(0 0 0 / 15%);
+										transform: translateX(-50%);
+									}
+									.area_ebook .info .img:after {
+										content: 'Detail View';
+										display: block;
+										position: absolute;
+										top: 100%;
+										left: 0px;
+										width: 100%;
+										height: 100%;
+										box-sizing: border-box;
+										padding-top: 60%;
+										background: rgba(0,0,0,0.3);
+										color: #fff;
+										font-size: 14px;
+										text-align: center;
+										font-weight: 300;
+										letter-spacing: 1px;
+										transition: all 0.5s cubic-bezier(0, 0.4, 0.32, 0.97);
+									}
+									.area_ebook .info > a em {
+										display: block;
+										padding-top: 40px;
+										font-size: 20px;
+										letter-spacing: -1px;
+										color: #fff;
+										text-align: center;
+										overflow: hidden;
+										text-overflow: ellipsis;
+										white-space: nowrap;
+									}
+									.area_ebook .info > a:after {
+										content: '';
+										display: block;
+										position: absolute;
+										top: 20px;
+										right: 20px;
+										width: 28px;
+										height: 9px;
+										background: url(http://www.koreadokdo.or.kr/images/common/sp_com.png) no-repeat -64px -30px;
+									}
+									.area_ebook .info .link {
+										position: absolute;
+										bottom: 0px;
+										left: 0px;
+										width: 100%;
+										height: 50px;
+									}
+									.area_ebook .info .link > a:nth-of-type(1) {
+										border-right: 1px solid #e95563;
+									}
+									.area_ebook .info .link > a {
+										float: left;
+										width: 50%;
+										height: 100%;
+										line-height: 50px;
+										box-sizing: border-box;
+										border-top: 1px solid #e95563;
+										color: #fff;
+										font-weight: 300;
+										text-align: center;
+										transition: all 0.5s ease;
+									}
+									.area_ebook .info .link:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+									.area_ebook .btn_more {
+										position: absolute !important;
+										top: 50px;
+										right: 30px;
+									}
+
+
+									.area_road {
+										position: relative;
+										width: calc(100% - 345px);
+										box-sizing: border-box;
+										padding: 50px 0 0 50px;
+									} 
+									.area_road h2 {
+										font-size: 23px;
+										color: #27272f;
+										font-weight: 500;
+										letter-spacing: -1px;
+									}
+									.area_road p {
+										margin-top: 20px;
+										font-size: 16px;
+										color: #666;
+										line-height: 1.5em;
+										font-weight: 300;
+										letter-spacing: -0.5px;
+									}
+									.area_road .tel {
+										display: block;
+										position: absolute;
+										bottom: 50px;
+										left: 50px;
+										font-size: 16px;
+										color: #fff;
+									}
+									.area_road .tel a {
+										display: block;
+										margin-top: 5px;
+										font-size: 20px;
+										font-weight: 600;
+										color: #fff;
+									}
+									.area_bottom.active .area_road > a {
+										right: 0px;
+										transition-delay: 1.3s;
+									}
+									.area_road > a {
+										display: block;
+										position: absolute;
+										top: 50%;
+										right: 20px;
+										z-index: 10;
+										width: 100px;
+										height: 66px;
+										background: #27272f;
+										text-indent: 100%;
+										overflow: hidden;
+										white-space: nowrap;
+										box-shadow: 5px 15px 15px rgb(0 0 0 / 15%);
+										transform: translateY(-50%);
+										transition: right 0.5s ease 0s;
+									}
+									.area_road > a:before {
+										content: '';
+										display: block;
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										width: 28px;
+										height: 9px;
+										margin: -4.5px 0 0 -14px;
+										background: url(http://www.koreadokdo.or.kr/images/common/sp_com.png) no-repeat -64px -30px;
+										transform: translateX(0px);
+										transition: all 0.5s ease 0s;
+									}
+									.area_road:after {
+										content: '';
+										display: block;
+										position: absolute;
+										bottom: 175px;
+										left: 20px;
+										width: 232px;
+										height: 98px;
+										background: url(http://www.koreadokdo.or.kr/images/main/img_road01.png) no-repeat 50% 0;
+									}
+									.area_bottom .box:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+									.area_bottom:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+
+
+
+
+
+									.area_logo {
+										position: relative;
+										max-width: 1400px;
+										margin: 40px auto;
+									}
+									.area_logo .bx-wrapper {
+										margin-left: 210px;
+									}
+									.area_logo .list li img {
+										width: 100%;
+										max-width: 180px;
+									}
+									img {
+										vertical-align: top;
+									}
+									.area_logo .list:after {
+										content: '';
+										display: block;
+										clear: both;
+									}
+									.area_logo .bx-controls {
+										position: absolute;
+										top: 50%;
+										left: 0px;
+										width: 150px;
+										height: 6px;
+										margin-top: -3px;
+									}
+									.area_logo .bx-controls-direction a.bx-prev {
+										background-position: -244px -2px;
+									}
+									.area_logo .bx-controls-direction a[class^="bx-"] {
+										width: 32px;
+										height: 6px;
+										vertical-align: top;
+									}
+									.area_logo .bx-controls a[class^="bx-"] {
+										display: inline-block;
+										background-image: url(http://www.koreadokdo.or.kr/images/common/sp_com.png);
+										background-repeat: no-repeat;
+										text-indent: 100%;
+										overflow: hidden;
+										white-space: nowrap;
+									}
+									.area_logo .bx-controls-direction a.bx-next {
+										margin-left: 81px;
+										background-position: -244px -10px;
+									}
+									.area_logo .bx-controls-direction a[class^="bx-"] {
+										width: 32px;
+										height: 6px;
+										vertical-align: top;
+									}
+									.area_logo .bx-controls-auto a.bx-start {
+										background-position: -288px 0px;
+									}
+									.area_logo .bx-controls-auto a[class^="bx-"] {
+										position: absolute;
+										top: 50%;
+										left: 50%;
+										width: 12px;
+										height: 14px;
+										margin: -6px 0 0 -7px;
+									}
+
+
+
+									.info a:before{
+										left: 0px;
+										top: 50%;
+										width: 100%;
+										height: 1px; 
+									}
+									.area_notice .area_tab_main .list li a em:hover i{box-shadow:0 -10px 0 #f7d1de inset;}
+									.area_ebook .info > a:hover .img:after{top:0px;}
+									.area_ebook .info .link > a:hover{background:#c03441;}
+									.area_event .list li a:hover{background:#41478f; border-color:#41478f; box-shadow:5px 15px 15px rgba(65,71,143,0.2);}
+									.area_event .list li a:hover > i{border-color:#2b317d; color:#c2c6f3;}
+									.area_event .list li a:hover em{color:#fff;}
+									.area_event .list li a:hover em{color:#fff;}
+									.area_event .list li a:hover span{color:#c2c6f3;}
+									.area_road > a:hover:before{transform:translateX(15px);}
+
+
+
+									/*알림단*/
+									.section input[id*="slide"] { 
+										display: none;
+									}
+
+									.section{
+										background-color: #f6f1f2;
+									}
+
+									.section .slidewrap{
+										float: left;
+										max-width: 800px; 
+										height: 300px;
+										margin: 0 auto; 
+										overflow: hidden;
+									}
+
+									.section .slidelist{
+										white-space: nowrap; 
+										font-size: 0;
+										background-color: #f6f1f2;
+									}
+
+									.section .slidelist > li {
+										display: inline-block; 
+										vertical-align: middle; 
+										transition: all 1s;
+									}
+
+									.section .slidelist > li > a {
+										width: 800px; 
+										display: block; 
+										position: relative;
+										margin-right: 0px;
+									}
+
+									.section .slidelist > li > a img{
+										margin-left: 190px;
+										width: 550px; 
+										height: 300px;
+									}
+
+									.section .slidelist label {
+										position: absolute; 
+										z-index: 100; 
+										top: 85%; 
+										transform: translateY(-50%); 
+										padding:51px; 
+										cursor: pointer;
+									}
+
+									
+									.section .slidelist .right{
+										right: 650px; 
+										background: url(./images/redbutton_right.png) center center / 100% no-repeat;
+									}
+
+									.section [id="slide01"]:checked ~ .slidewrap .slidelist > li{transform: translateX(0%);}
+
+									.section [id="slide02"]:checked ~ .slidewrap .slidelist > li{transform: translateX(-100%);}
+									.section [id="slide03"]:checked ~ .slidewrap .slidelist > li{transform: translateX(-200%);}
+									.section [id="slide04"]:checked ~ .slidewrap .slidelist > li{transform: translateX(-300%);}
+									.section [id="slide05"]:checked ~ .slidewrap .slidelist > li{transform: translateX(-400%);}
+									.section [id="slide06"]:checked ~ .slidewrap .slidelist > li{transform: translateX(-500%);}
+
+
+									/*footer부분*/
+
+									/*하단 부분*/
+									#footer{
+										background: #383a4a;
+										width: 100%;
+										float: bottom;
+										clear: both;
+									}
+
+									*{
+										margin: 0;
+										padding: 0;
+									}
+									html{
+										height: 100%;
+									}
+									ul, li, ol{
+										list-style: none;
+										margin: 0;
+									}
+									footer {
+										height: 202px;
+										display: block;
+										background: #383a4a;
+										color: #c0c0c4;
+										font-family: Montserrat, Noto Sans KR , 맑은 고딕, Malgun Gothic,돋움, Dotum, 굴림, Gulim, sans-serif;
+/*    position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;*/
+		margin-top: auto;
+	}
+	body{
+		padding: 0;
+		margin: 0;
+		height: 100%;
+		font-size: 15px;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.wrap {
+		min-height: 100%;
+		position: relative;
+	}
+
+	.container{
+		box-sizing: border-box;
+		position: relative;
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: 40px 0px;
+	}
+	/*홈페이지정보*/
+	.footer_extra{
+		padding: 0px 110px 0px 0px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+/*  .footer_extra{
+		display: flex;
+		flex-wrap: wrap;
+
+		}*/
+		.footer_extra li {
+			padding: 0px 55px 0px 0px;
+			/*    margin-right: 9px;*/
+		}
+		.footer_extra li>a{
+			display: inline-block;
+			font-size: 15px;
+			font-weight: 300;
+			color: #c7c7c7;
+			transition: all 0.3s;
+			text-decoration: none;
+			/*    padding-right: 15px;*/
+			text-align: left;
+		}
+		.footer_extra li:first-child > a{
+			color: #b5bbff;
+		}
+		.footer_extra li>a:hover{
+			color: #ffffff;
+		}
+		.footer_extra li:first-child > a:hover{
+			color: #7a85ff;
+		}
+		/*sns버튼*/
+		.footer_sns{
+			position: absolute;
+			right: 0px;
+		}
+		.footer_sns ul{
+			display: flex;
+			margin-top: 35px;
+		}
+		.footer_sns ul>li>a{
+			margin-left: 14px;
+			position: relative;
+		}
+/*  .footer_sns ul>li.facebook{background-position-x: 0;}
+	.footer_sns ul>li.instagram{background-position-x: -23px;}
+	.footer_sns ul>li.blog{background-position-x: -46px;}
+	.footer_sns ul>li.youtube{background-position-x: -69px;}*/
+	/*독도재단 정보*/
+	.footer_info{
+		display: inline-block;
+		margin-top: 50px;
+		color: #c7c7c7;
+	}
+	.footer_info span{
+		display: inline-block;
+		margin-right: 35px;
+		padding:  0;
+		color: #c7c7c7;
+	}
+	.footer_info a{
+		display: inline-block;
+		color: #c7c7c7;
+		font-weight: 200;
+	}
+	.footer_info p{
+		font-size: 14px;
+		margin-top: 8px;
+		color: #c7c7c7;
+	}
+	/*top 버튼*/
+	.top_button{
+		display: block;
+		position: absolute;
+		top: -40px;
+		right: 0px;
+		width: 100px;
+		height: 100px;
+/*    box-sizing: border-box;
+*/  }
+
+
+
+</style>
+</head>
+
+<body>
+	<div id="wrap">
+		<header id="header">
+			<h1 class="logo">
+				<a href="./main.html">독도재단</a>
+			</h1>
+
+			<div id="header1">
+
+				<!-- //gnb -->
+
+				<div class="area_util">   
+					<ul>
+						<li><a href="/member/page.html?mid=member&amp;return_url=http%3A%2F%2Fwww.koreadokdo.or.kr%2Fcontents%2Fsub03%2Fpage.html%3Fmid%3D003043" data-util="login";><a href='https://ifh.cc/v-9uSTwU' target='_blank'></a>로그인</a></li>
+
+						<li><a href="/member/page.html?mid=member&amp;mode=agree" data-util="join"><a href='https://ifh.cc/v-5p9xaa' target='_blank'></a>회원가입</a></li>
+					</ul>
+
+					<div class="area_lang">
+						<select name="language" id="language">
+
+							<option value="1" style='background-color:transparent;' >한국어</option>
+							<option value="2" style='background-color:transparent;'>English</option>
+							<option value="3" style='background-color:transparent;'>日本語</option>
+							<option value="3" style='background-color:transparent;'>中文</option>
+						</select>
+					</div>
+				</div>
+
+
+
+				<div class="header1_menu">
+					<ul class="nav float-wrap">
+						<li class="menu-1">
+							<a class="link-1" href="#">주요사업
+							</a>
+							<ul class="list-1">
+								<li class="menu-2 float-wrap">
+									<a class="link-2" href="#">플랫폼 <span class="triangle"style="font-size: xx-small; text-decoration: none; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a>
+									<ul class="list-2">
+										<li><a class="link-3" href="#">사이버 전략센터 「K-독도」 운영</a></li>
+										<li><a class="link-3" href="#">매거진독도로제작</a></li>
+									</ul>
+									<li class="menu-2 float-wrap">
+										<a class="link-2" href="#">홍보(국내) <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+										<ul class="list-2">
+											<li><a class="link-3" href="#">독도 바로알기</a></li>
+											<li><a class="link-3" href="#">찾아가는 독도자료전</a></li>
+											<li><a class="link-3" href="#">우리땅 독도밟기</a></li>
+											<li><a class="link-3" href="#">대학 독도동아리 결성 및 활성화</a></li>
+										</ul>
+
+										<li class="menu-2 float-wrap"><a class="link-2" href="#">홍보(국외) <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+											<ul class="list-2">
+												<li><a class="link-3" href="#">국내체류 외국인 독도탐방</a></li>
+												<li><a class="link-3" href="#">세계인과 함께하는 글로벌 독도</a></li>
+												<li><a class="link-3" href="#">세계 청년 독도평화회의</a></li>
+											</ul>
+										</li>
+										<li class="menu-2 float-wrap"><a class="link-2" href="#">동해(독도)기반 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶</span><p>콘텐츠 개발</p></a></a>
+											<ul class="list-2">
+												<li><a class="link-3" href="#">독도 라운드테이블 운영</a></li>
+												<li><a class="link-3" href="#">동해 및 독도 교육홍보 자료 개발</a></li>
+												<li><a class="link-3" href="#">한·일 독도 진실 추구 실천 포럼</a></li>
+											</ul>
+										</li>
+										<li class="menu-2 float-wrap"><a class="link-2" href="#">독도문화행사 <span style="font-size: xx-small; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+											<ul class="list-2">
+												<li><a class="link-3" href="#">독도문화대축제</a></li>
+												<li><a class="link-3" href="#">독도문예대전</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<li class="menu-1">
+										<a class="link-1" href="#">자료실
+										</a>
+										<ul class="list-1">
+											<li class="menu-2 float-wrap"><a class="link-2" href="./page3(독도사진)/page3.html">독도사진 <span style="font-size: xx-small; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">독도</a></li>
+													<li><a class="link-3" href="#">식물</a></li>
+													<li><a class="link-3" href="#">조류</a></li>
+													<li><a class="link-3" href="#">생물</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap"><a class="link-2" href="./page2(독도영상)/page2.html">독도영상 <span style="font-size: xx-small; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">홍보영상</a></li>
+													<li><a class="link-3" href="#">언론영상</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap">
+												<a class="link-2" href="#">연구자료</a>
+												<a class="link-2" href="#">매거진</a>
+												<a class="link-2" href="#">매거진신청</a>
+												<a class="link-2" href="./page1(홍보관)/page1.html">홍보관</a>
+												<a class="link-2" href="#">LIVE독도영상</a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-1">
+										<a class="link-1" href="#">알림마당
+										</a>
+										<ul class="list-1">
+											<li class="menu-2 float-wrap"><a class="link-2" href="#">재단알림 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">공지사항</a></li>
+													<li><a class="link-3" href="#">카드뉴스</a></li>
+													<li><a class="link-3" href="#">보도자료</a></li>
+													<li><a class="link-3" href="#">언론 · 홍보</a></li>
+													<li><a class="link-3" href="#">행사안내</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap"><a class="link-2" href="#">정보공개 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">정보공개제도안내</a></li>
+													<li><a class="link-3" href="#">업무처리절차</a></li>
+													<li><a class="link-3" href="#">정보공개접수안내</a></li>
+													<li><a class="link-3" href="#">불복구제절차</a></li>
+													<li><a class="link-3" href="#">계약정보공개</a></li>
+													<li><a class="link-3" href="#">사업실명제</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap"><a class="link-2" href="#">고객광장 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">고객광장</a></li>
+													<li><a class="link-3" href="#">독도교육신청</a></li>
+													<li><a class="link-3" href="#">홍보버스신청</a></li>
+													<li><a class="link-3" href="#">전시자료신청</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap"><a class="link-2" href="#">윤리경영 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">윤리헌장</a></li>
+													<li><a class="link-3" href="#">내부신고시스템</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-1">
+										<a class="link-1" href="#">기관소개
+										</a>
+										<ul class="list-1">
+											<li class="menu-2 float-wrap"><a class="link-2" href="#">재단소개 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">인사말</a></li>
+													<li><a class="link-3" href="#">기관연혁</a></li>
+													<li><a class="link-3" href="#">비전/경영방침</a></li>
+													<li><a class="link-3" href="#">조직도</a></li>
+													<li><a class="link-3" href="#">찾아오시는길</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap"><a class="link-2" href="#">열린경영 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">국민참여</a></li>
+													<li><a class="link-3" href="#">고객헌장</a></li>
+													<li><a class="link-3" href="#">인권경영</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap"><a class="link-2" href="#">통합공시 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶</span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">공개자료</a></li>
+													<li><a class="link-3" href="#">업무추진비</a></li>
+													<li><a class="link-3" href="#">경영공시</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-1">
+										<a class="link-1" href="#">독도현황
+										</a>
+										<ul class="list-1">
+											<li class="menu-2 float-wrap">
+												<a class="link-2" href="#">정부입장</a>
+												<a class="link-2" href="#">일반현황 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">행정구역</a></li>
+													<li><a class="link-3" href="#">지리적 위치</a></li>
+													<li><a class="link-3" href="#">구성</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap">
+												<a class="link-2" href="#">독도역사 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">독도의 진실</a></li>
+													<li><a class="link-3" href="#">독도연대기</a></li>
+													<li><a class="link-3" href="#">지명변천</a></li>
+													<li><a class="link-3" href="#">문헌자료</a></li>
+													<li><a class="link-3" href="#">역사 속 인물</a></li>
+												</ul>
+											</li>
+											<li class="menu-2 float-wrap">
+												<a class="link-2" href="#">관리현황 <span style="font-size: xx-small; ">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp▶ </span></a></a>
+												<ul class="list-2">
+													<li><a class="link-3" href="#">독도관련 부처별 관리현황</a></li>
+													<li><a class="link-3" href="#">독도사람들</a></li>
+													<li><a class="link-3" href="#">시설물</a></li>
+													<li><a class="link-3" href="#">독도 관리를 위한 관계 법령</a></li>
+													<li><a class="link-3" href="#">입도/교통편</a></li>
+												</ul>
+											</li>
+										</ul>
+									</li>
+									<li class="menu-1">
+										<a class="link-1" href="http://www.k-dokdo.com/">K-독도
+										</a>
+									</li>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="area_utill">
+					</div>
+				</header>
+
+				<aside class="area_sns">
+					<ul>
+						<li><a href="/" target="_blank" title="새창" data-sns="face">Facebook</a></li>
+						<li><a href="/" target="_blank" title="새창" data-sns="insta">instagram</a></li>
+						<li><a href="/" target="_blank" title="새창" data-sns="blog">blog</a></li>
+						<li><a href="/" target="_blank" title="새창" data-sns="tube">youtube</a></li>
+					</ul>
+
+					<span class="scroll">
+						<span>Scroll</span>
+						<i></i>
+					</span>
+				</aside>
+
+
+				<input type="checkbox" id="menuicon">
+				<div class="area_visual">
+					<div class="video">
+						<button type="button"  on click="changeicon"  id="vidbutton">STOP</button> 
+						<video id="myvid" autoplay muted loop poster="http://www.koreadokdo.or.kr/images/main/img_visual01.jpg" id="videoplayer">
+							<source src="http://www.koreadokdo.or.kr/images/video_bg02.mp4" type="video/mp4" id="vidoeSrc">
+							</video>
+						</div>
+
+						<label for="menuicon">
+							<span></span>
+							<span></span>
+							<i class="font">CLICK</i>
+						</label>
+					</div>
+
+					<div class="container"> 
+						<div class="area_link_open">
+							<ul>
+								<li><a href="./page1(홍보관)/page1.html"><img src="http://www.koreadokdo.or.kr/images/main/img_link01.svg" alt=""/><span>홍보관</span></a></li>
+								<li><a href="./page2(독도영상)/page2.html"><img src="http://www.koreadokdo.or.kr/images/main/img_link02.svg" alt=""/><span>독도영상</span></a></li>
+								<li><a href="./page3(독도사진)/page3.html"><img src="http://www.koreadokdo.or.kr/images/main/img_link03.svg" alt=""/><span>독도사진</span></a></li>
+								<li><a href="/"><img src="http://www.koreadokdo.or.kr/images/main/img_link04.svg" alt=""/><span>언론 · 홍보</span></a></li>
+								<li><a href="/"><img src="http://www.koreadokdo.or.kr/images/main/img_link05.svg" alt=""/><span>계약체결</span></a></li>
+								<li><a href="/"><img src="http://www.koreadokdo.or.kr/images/main/img_link06.svg" alt=""/><span>고객참여</span></a></li>
+								<li><a href="/"><img src="http://www.koreadokdo.or.kr/images/main/img_link07.svg" alt=""/><span>국민제안</span></a></li>
+								<li><a href="/"><img src="http://www.koreadokdo.or.kr/images/main/img_link08.svg" alt=""/><span>독도교육신청</span></a></li>
+								<li><a href="/"><img src="http://www.koreadokdo.or.kr/images/main/img_link09.svg" alt=""/><span>홍보버스신청</span></a></li>
+								<li><a href="/"><img src="http://www.koreadokdo.or.kr/images/main/img_link10.svg" alt=""/><span>전시자료신청</span></a></li>
+							</ul>
+						</div>
+
+						<div class="link">
+							<div class="text-area stagger-wapper">
+								<div class="stagger-item">독도,</div>
+								<div class="stagger-item">한반도의 아침이</div>
+								<div class="stagger-item">시작되는 최동단!</div>
+							</div>
+
+
+							<div class="obj_dokdo"></div>
+							<div id="canvas">
+								<span class="shooting">
+									<i></i>
+								</span>
+
+								<span class="shooting2">
+									<i></i>
+								</span>
+							</div>
+
+						</div>
+					</div>
+
+
+					<section id="container">
+						<div id="content">
+
+
+							<article class="area_notice">
+								<!-- 재단소식 세부 내용 -->
+								<div class="inr">
+									<div class="title">
+										<em>
+											Notice
+										</em>
+										<h2>재단소식</h2>
+										<p>독도재단의 이슈와<br>정보를 안내해드립니다.</p>
+									</div>
+									<div class="area_tab_main scroll_up active">
+										<button type="button" class="on">공지사항</button>
+										<div class="list" style="display: block;">
+											<ul>
+												<li><a href="">
+													<em><i>제7회 독도(울릉도)기념품디자인 공모전 개최 공고</i></em>
+													<span>     
+														□ 주최/주관 : 경상북도,(재)독도재단 / 대구·경북공예협동조합
+														□ 대회일정
+														◦ 접수방법 : 방문접수 또는 우편 접수
+													◦ 현장접수 : 2021.10.19.(화)~10.20.(수), 2곳에서 동시</span>
+													<i>2021-07-29</i>
+												</a>
+											</li>
+											<li><a href="">
+												<em><i>독도를 상징하는 '도랑'과 '도아'이모티콘 무료배포!</i></em>
+												<span>        안녕하십니까! 독도재단 입니다~           독도재단에서 10월 '독도의 달'과 '도민의 날'을 맞아 독도를 상징하는 '도랑'과 '도아'이모</span>
+												<i>2020-10-23</i>
+											</a></li>
+											<li><a href="">
+												<em><i>★전 국민 독도수호 ‘비즈링 서비스’ 신청★</i></em>
+												<span>&nbsp;&nbsp;&nbsp;&nbsp;   신 청 란 (클릭) [PC 버전] [모바일 버전]</span>
+												<i>2019-06-03</i>
+											</a></li>            
+										</ul>
+										<a href="" class="btn_more">공지사항 더보기</a>
+									</div>
+
+									<button type="button">언론 · 홍보</button>
+									<div class="list" style="display:none;">
+										<ul>
+											<li><a href="" target="_blank">
+												<!-- 제목 -->
+												<em><i>서양·일본 고지도도 "독도는 대한민국 영토"…독도재단 공개</i></em>
+												<!-- 내용 -->
+												<span>클릭시 기사로 연결됩니다.</span>
+												<!-- 작성일 -->
+												<i>2021-07-26</i></a></li>
+												<li><a href="" target="_blank">
+													<!-- 제목 -->
+													<em><i>(재)독도재단, 제5기 ‘독도랑 기자단’ 위촉</i></em>
+													<!-- 내용 -->
+													<span>클릭시 기사로 연결됩니다.</span>
+													<!-- 작성일 -->
+													<i>2021-07-02</i></a></li>
+													<li><a href="" target="_blank">
+														<!-- 제목 -->
+														<em><i>독도재단, 대학생 독도지킴이 '독도동아리팀' 활동 시작</i></em>
+														<!-- 내용 -->
+														<span>클릭시 기사로 연결됩니다.</span>
+														<!-- 작성일 -->
+														<i>2021-06-29</i></a></li>              
+													</ul>
+													<a href="" class="btn_more">보도자료 더보기</a>
+												</div>
+												<button type="button">보도자료</button>
+												<div class="list" style="display:none;">
+													<ul>
+														<li><a href="">
+															<em><i>독도수호의 첨병, 제5기‘독도랑 기자단’위촉</i></em>
+															<span>" 독도수호의 첨병, 제5기‘독도랑 기자단’위촉 코로나 19 사태에 따른 비대면 발대식 개최</span>
+															<i>2021-07-01</i>
+														</a></li>
+														<li><a href="">
+															<em><i>독도재단, 2021 독도 탐방 프로그램 본격 시작</i></em>
+															<span>독도재단, 2021 독도 탐방 프로그램 본격 시작!‘국내체류 외국인 독도탐방’‘e독도수호 원정대’ 등</span>
+															<i>2021-06-22</i>
+														</a></li>
+														<li><a href="">
+															<em><i>(재)독도재단-(주)라쉬반코리아 업무협약</i></em>
+															<span>2021-06-22</span>
+														</a></li>
+													</ul>
+													<a href="" class="btn_more">보도자료 더보기</a>
+												</div>
+											</div>
+										</div>
+									</article>
+
+
+
+									<div class="area_middle scroll_up active">
+										<div class="inr">
+											<article class="area_event">
+												<diV class="title">
+													<em>
+														Event 
+													</em>
+													<h2>행사일정</h2>
+													<p>독도의 다양한 행사에<br>많은 관심 바랍니다.</p>
+												</div>
+												<ul class="list">
+													<li>
+														<a href="">
+															<em>4차 e독도수호 원정대(8.9 ~ 11.)</em>
+															<span>4차 e독도수호 원정대 (8. 9. ~ 8.11.)</span>
+															<i>2021-08-09</i>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<em>세계청년 독도평화회의(8.9 ~ 8.12.)</em>
+															<span>세계청년 독도평화회의 (.8. 9. ~ 8.12.)</span>
+															<i>201-08-09</i>
+														</a>
+													</li>
+												</ul>
+												<a href="" class="btn_more">행사일정 더보기</a>
+											</article>
+
+											<article class="area_banner">
+
+												<div class="section">
+													<input type="radio" name="slide" id="slide01" checked>
+													<input type="radio" name="slide" id="slide02">
+													<input type="radio" name="slide" id="slide03">
+													<input type="radio" name="slide" id="slide04">
+													<input type="radio" name="slide" id="slide05">
+													<input type="radio" name="slide" id="slide06">
+
+													<div class="slidewrap">
+														<ul class="slidelist">
+
+															<li>
+																<a>
+																	<img src="./images/1.png" width: 570px; height: 380px;>
+																	<label for="slide02" class="right"></label>
+																</a>
+															</li>
+
+
+															<li>
+																<a>
+																	<img src="./images/2.png" width: 570px; height: 380px;>
+																	<label for="slide03" class="right"></label>
+																</a>
+															</li>
+
+
+															<li>
+																<a>
+																	<img src="./images/3.png" width: 570px; height: 380px;>
+																	<label for="slide04" class="right"></label>
+																</a>
+															</li>
+
+															<li>
+																<a>
+																	<img src="./images/4.png" width: 570px; height: 380px;>
+																	<label for="slide05" class="right"></label>
+																</a>
+															</li>
+
+															<li>
+																<a>
+																	<img src="./images/5.png" width: 570px; height: 380px;>
+																	<label for="slide06" class="right"></label>
+																</a>
+															</li>
+
+															<li>
+																<a>
+																	<img src="./images/6.png" width: 570px; height: 380px;>
+																	<label for="slide01" class="right"></label>
+																</a>
+															</li>
+
+
+
+														</ul>
+													</div>
+
+												</div>
+
+												<div class="title">
+													<em>Banner</em>
+													<h2>알림존</h2>
+												</div>
+
+												<div class="bx-controls bx-has-controls-direction">
+													<div class="bx-controls-direction">
+														<a class="bx-prev" href="">알림존 다음보기</a>
+													</div>
+												</div>
+											</div>
+										</article>
+									</diV>
+
+									<div class="area_bottom scroll_up active">
+										<article class="area_live">
+											<div class="play">
+												<h2>Dokdo live</h2>
+												<iframe src="blob:http://www.koreadokdo.or.kr/b9f28013-a3c6-4bc6-b0fc-d1c52cb47b1a" scrolling="no" allowfullscreen title="독도라이브 실시간 보기">
+													<video muted autoplay loop>
+														<source src="blob:http://www.koreadokdo.or.kr/e25faab9-fa7a-4249-97c9-04fdf89c4989" type="vido/mp4">
+														</video>
+													</iframe>
+													<p>여기는 독도입니다.<br>작은 관이 독도사랑의 첫 걸음 입니다.</p>
+												</div>
+												<div class="info">
+													<div class="ie">
+														<em>느껴보세요!</em>
+														<p><span>아름다운 독도의 숨결</span>을<br>생생하게 전해드립니다.</p>
+														<p>실시간으로 독도에<br>사랑의 손길을 보내주세요.</p>
+													</div>
+												</div>
+											</article>
+											<div class="box">
+												<article class="area_ebook">
+													<div class="title">
+														<em>Magazine</em>
+														<h2>독도 매거진</h2>
+													</div>
+													<div class="info">  
+														<a href="" title="새창보기" target="_blank">
+															<i>2021.07</i>
+															<span class="img" style="background-image:url(http://www.koreadokdo.or.kr/upload/board_mag/page-138091-0001.jpg);"></span>
+															<em>독도로 36호</em>
+														</a>
+														<div class="link">
+															<a href="" title="새창보기" target="_blank">E-book보기</a>
+															<a href="">매거진신청</a>
+														</div>
+													</div>
+													<a href="" class="btn_more">
+													독도매거진 더보기</a>
+												</article>
+
+												<article class="area_road">
+													<h2>독도 가는 길</h2>
+													<p>아직까지 한 번도 경험하지 못하였다면 <br>독도를 느껴보세요! 입도와 교통 편을 <br>안내해 드립니다.</p>
+													<span class="tel">
+														울릉군 독도관리사무소
+														<a href="tel:0547906646">T. 054-790-6646</a>
+													</span>
+													<a href="">
+														바로가기
+													</a>
+												</article>
+											</div>
+										</div>
+
+										<div class="area_logo">
+											<div class="bx-wrapper" style="max-width: 1190px;">
+
+												<div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: auto; ">
+
+													<ul class="list" style="width: 11215%; position: relative; transition-duration: 0s; transform: translate3d(auto, 0px, 0px);">
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/img_logo01.gif" alt="외교부"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width:auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/ci_bn_01.gif" alt="국민권익위원회"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width:auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/%EA%B3%B5%EA%B3%B5%EC%9E%AC%EC%A0%95%ED%99%98%EC%88%98%EB%B2%95%20%EB%B0%B0%EB%84%88.jpg" alt="공공재정환수법"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/30713_img_logo02.gif" alt="경상북도 사이버독도"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/img_logo03.gif" alt="경상북도"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/img_logo04.gif" alt="K-독도"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/img_logo05.gif" alt="독도박물관"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width:auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/img_logo06.gif" alt="국회도서관"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/img_logo07.gif" alt="청렴포털"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/img_logo08.gif" alt="나라독도살리기국민운동본부"/></a></li>
+
+														<li style="float: left; list-style: none; position: relative; width: auto; margin-right: 22px;" class="bx-clone" aria-hidden="true"><a href="" target="_blank" title="새창열림"><img src="http://www.koreadokdo.or.kr/upload/program/koweb_banner/%EC%97%91%EC%8A%A4%ED%8F%AC.jpg" alt="엑스포"/></a></li>
+													</ul>
+												</div>
+												<div class="bx-controls bx-has-controls-direction bx-has-controls-auto">
+													<div class="bx-controls-direction">
+														<a class="bx-prev" href>관련사이트 다음보기</a>
+														<a class="bx-next" href>관련사이트 이전보기</a>
+													</div>
+													<!-- //관련배너 -->
+													<div class="bx-controls-auto">
+														<div class="bx-controls-auto-item">
+															<a class="bx-start" href>관련사이트 슬라이드 재생</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+
+							<div id="footer">
+								<div class="container">
+									<ul class="footer_extra">
+										<li><a href="">개인정보처리방침</a></li>
+										<li><a href="">이용약관</a></li>
+										<li><a href="">이메일무단수집거부</a></li>
+										<li><a href="">홈페이지불편신고</a></li>
+										<li><a href="">사이트맵</a></li>
+									</ul>
+									<div class="footer_sns">
+										<ul>
+											<li class="facebook"><a href="https://www.facebook.com/dokdojd"><img src='https://ifh.cc/g/uVyjU8.png' width="32" height="32"></a></li>
+											<li class="instagram"><a href="https://www.instagram.com/k_dokdo/"><img src='https://ifh.cc/g/CweWN6.png' width="32" height="32"></a></li>
+											<li class="blog"><a href="https://blog.naver.com/dokdojd"><img src="https://ifh.cc/g/pBFFH9.png' border='0'" width="32" height="32"></a></li>
+											<li class="youtube"><a href="https://www.youtube.com/user/dokdojd"><img src='https://ifh.cc/g/RLO8m0.png' width="32" height="32"></a></li>
+										</ul>
+									</div>
+									<div class="footer_info">
+										<span>우) 37751 경상북도 포항시 북구 중흥로 231 동양빌딩 9층</span>
+										<span>이메일 : dokdo@koreadokdo.or.kr</span>
+										<span>대표번호 : <a href="tel:0542726513" style="text-decoration: none;">054-272-6513</a></span>
+										팩스번호 : 054-272-6515
+										<p>COPYRIGHT 2019. BY 재단법인 독도재단. ALL RIGHTS RESERVED. Design by KOWEB.</p>  
+									</div>
+									<div class="top_button">
+										<a href="#header"><img src='https://ifh.cc/g/OMZ9bp.jpg' width="100" height="100"></a>
+									</div>
+								</div>  
+							</div>
+						</div>
+
+
+						<div class="obj_open show"></div>
+
+					</div><!-- wrap -->
+
+					<script>
+						var ppbutton = document.getElementById("vidbutton");
+						ppbutton.addEventListener("click", playPause);
+						myVideo = document.getElementById("myvid");
+						iconvid = document.getElementById("vidbutton", ":before");
+						function playPause() { 
+							if (myVideo.paused) {
+								myVideo.play();
+								ppbutton.innerHTML = "STOP";
+								iconvid.innerp
+							}
+							else  {
+								myVideo.pause(); 
+								ppbutton.innerHTML = "PLAY";
+							}
+						}
+
+						function changeicon(){
+							var vidicon = document.getElementById("vidbutton");
+							if (vidicon.src.match("stopicon.png")){
+								vidicon.src - "playicon.png";
+							}
+							else{
+								vidicon.src = "stopicon.png";
+							}
+						}
+
+					</script>
+			</body>
+
+			</html>
+

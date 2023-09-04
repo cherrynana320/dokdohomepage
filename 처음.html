@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <title>oh조 소개페이지</title>
+    <style>
+    body{
+    	font-family: 'Nanum Myeongjo', serif;
+    	overflow:hidden ;
+    }
+
+	#bg {
+	  position: fixed; 
+	  top: -50%; 
+	  left: -50%; 
+	  width: 200%; 
+	  height: 200%;
+	}
+	#bg img {
+	  position: absolute; 
+	  top: 0; 
+	  left: 0; 
+	  right: 0; 
+	  bottom: 0; 
+	  margin: auto; 
+	  min-width: 50%;
+	  min-height: 50%;
+	}
+
+	.title{
+		top: 250px;
+		left: 250px;
+		position: relative;
+		font-size: 40px;
+		padding: 30px;
+		font-weight: bold;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.2);
+		background-position: center center;
+		color: rgba(255, 255, 255, 0.7);
+		width: 200px;
+		height: 50px;
+		z-index: 100000;
+	}
+
+	.site{
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(70%);
+		position: relative;
+		font-size: 18px;
+		padding: 30px;
+		font-weight: bold;
+		text-align: left;
+		background-color: rgba(0, 0, 0, 0.5);
+		color: rgba(255, 255, 255, 0.6);
+		width: 1120px;
+		height: 230px;
+		background-position: center center;
+	}
+	.site pre{
+		font-size: 25px;
+		font-weight: normal;
+		font-family: Nanum Myeongjo;
+	}
+
+	.highlight{
+		display: inline-table;
+		position: relative;
+		overflow: hidden;
+	}
+	.highlight::before{
+		content: '';
+		display: block;
+		width: 100%;
+		height: 100%;
+		background:  linear-gradient(to top, rgba(192,200,236,.5) 50%, transparent 50%);
+		position: absolute;
+		top: 0;
+		left: -100%;
+		transition: all .3s;
+	}
+
+	.site pre:hover .highlight::before{
+		left: 0;
+	}
+	.site pre:hover span{
+		color: #fff;
+		transition: all .3s;
+	}
+
+	.team{
+		top: -215px;
+		right: -1100px;
+		position: relative;
+		font-size: 18px;
+		padding: 30px;
+		font-weight: bold;
+		text-align: center;
+		background-color: rgba(0, 0, 0, 0.75);
+		color: rgba(255, 255, 255, 0.6);
+		width: 430px;
+		height: 120px;
+		background-position: center center;
+	}
+	.team pre{
+		font-family: Nanum Myeongjo;
+	}
+
+
+/*video*/
+	.area_visual{
+		position: relative; 
+		box-sizing: border-box; 
+		padding: 120px 0 0 70px; 
+		top: -540px; right: -165px; 
+		opacity: 0.5s;
+	}
+
+	.area_visual .video video{
+		width: 15%; height: 15%; 
+		object-fit: contain;
+		opacity: 0.5;
+	}
+
+/*ENTER*/
+.enter{position: absolute; width: 200; height: 120;}
+.enter a{bottom: -125%; left: 50%; transform: translateX(-170%); font-family: Nanum Myeongjo; position: absolute; text-decoration: none; font-size: 35px; color: #fff; font-weight: 700;}
+.enter a:hover{color: rgba(255, 255, 255, 0.6);}
+
+    </style>
+</head>
+
+<body>
+    <div id="bg"> <img src=https://mblogthumb-phinf.pstatic.net/MjAxNjExMTVfMTMz/MDAxNDc5MTkwOTM4MDgx.xLujH2MC_3i19k26ofwlvvHjoPzFuDMtcV6tHndJkZkg.XAEh57UwGr8pVfk8krLzc1xaQmsipSotRP91wOLHS1Ag.JPEG.ktv520/%EB%8F%85%EB%8F%841-tile.jpg?type=w800 alt="" width="703" height="1466"> </div>
+    <div class="title">OH조</div>
+    <p>
+    <div class="site"><독도재단 사이트 선정 이유>
+    <pre>
+	1. 독도재단의 <span class="highlight">사이트를 홍보</span>함.
+
+	2. 사람들에게 <span class="highlight">독도는 역사적으로 대한민국 섬이라는 근거를 설명</span>할 수 있도록 정보를 제공함.
+
+	3. 독도재단 사이트에서 다양한 문화예술 콘텐츠를 홍보하면서 <span class="highlight">독도수호</span> 함.</pre>
+	</div>
+
+</p>
+<p>
+	<div class="team"><팀원소개>
+		<pre>
+2019120109 박지연	2021111289 전지현
+
+2021111299 최리나	2021111745 최보현
+		</pre></div>
+</p>
+
+<div class="area_visual">
+			<div class="video">
+				<video autoplay muted loop poster="http://www.koreadokdo.or.kr/images/main/img_visual01.jpg" id="videoplayer">
+					<source src="http://www.koreadokdo.or.kr/images/video_bg02.mp4" type="video/mp4" id="vidoeSrc">
+				</video>
+			</div>
+
+<div class="enter">
+	<a href="./main.html">사이트 입장</a>
+</div>
+</body>
+</html>
